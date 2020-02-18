@@ -1,0 +1,339 @@
+QsciScintilla {
+    qproperty-backgroundcolor: #D9DADB;
+    qproperty-marginbackgroundcolor: #D9DADB;
+}
+
+QMenu {
+    background-color: #ABABAB; /* sets background of the menu */
+    border: 1px solid rgb(77, 77, 77);
+    border-radius: 5px;
+}
+
+QMenu::item {
+    /* sets background of menu item. set this to something non-transparent
+        if you want menu color and menu item color to be different */
+    background-color: transparent;
+}
+
+QMenu::item:selected { /* when user selects item using mouse or keyboard */
+    background-color: rgb(101, 67, 33);
+}
+
+QMenu::item:disabled { /* when user selects item using mouse or keyboard */
+    color: rgb(77, 77, 77);
+}
+
+QWidget {
+   background: rgb(46, 49, 63);
+   color: white;
+}
+
+Line {
+    border-top: 1px solid rgb(77, 77, 77);
+    max-height: 1px;
+}
+
+QPushButton {
+    border: 1px solid rgb(77, 77, 77);
+    border-radius: 4px;
+    margin: 5px;
+    padding: 5px;
+}
+
+QPushButton {
+    color: red;
+    border: 1px solid rgb(77, 77, 77);
+    border-radius: 4px;
+    margin: 5px;
+    padding: 5px;
+    background: rgb(17, 0, 30)
+}
+
+QPushButton:hover {
+    background: rgb(101, 67, 33);
+}
+
+QPushButton:pressed {
+    background: rgb(0, 170, 0);
+}
+
+QGroupBox {
+    background: rgb(33, 35, 45);
+    border: 1px solid rgb(77, 77, 77);
+    border-radius: 6px;
+    padding: 5px;
+    padding-top: 30px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    top: 10px;
+    color: white;
+    font-size: 14px;
+    margin: 1px;
+    background-color: transparent;
+}
+
+QTabWidget::pane {
+    background: red;
+}
+
+QTabBar {
+    color: white;
+    background: none;
+    border-top: 1px solid rgb(77, 77, 77);
+    border-bottom:  1px solid rgb(77, 77, 77);
+}
+
+QTabWidget::tab-bar {
+    alignment: center;
+    width: 999999px;
+}
+
+QTabWidget::tab-bar:top {
+    top: 0px;
+    border: 1px solid black;
+}
+
+QTabWidget::tab-bar:bottom {
+    bottom: 1px;
+}
+
+QTabWidget::tab-bar:left {
+    right: 10px;
+}
+
+QTabWidget::tab-bar:right {
+    left: 1px;
+}
+
+QTabBar::tab {
+    border: 1px solid rgb(77, 77, 77);
+    border-radius: 4px;
+    margin: 5px;
+}
+
+QTabBar::tab:selected {
+    background: rgb(0, 170, 0);
+}
+
+QTabBar::tab:!selected {
+    background: rgb(17, 0, 30);
+}
+
+QTabBar::tab:!selected:hover {
+    background: #999;
+}
+
+QTabBar::tab:top:!selected {
+
+}
+
+QTabBar::tab:bottom:!selected {
+
+}
+
+QTabBar::tab:top, QTabBar::tab:bottom {
+    min-width: 8ex;
+    padding: 5px 10px 5px 10px;
+}
+
+QTabBar::tab:top:selected {
+
+}
+
+QTabBar::tab:bottom:selected {
+
+}
+
+QTabBar::tab:top:last, QTabBar::tab:bottom:last,
+QTabBar::tab:top:only-one, QTabBar::tab:bottom:only-one {
+
+}
+
+QTabBar::tab:left:!selected {
+
+}
+
+QTabBar::tab:right:!selected {
+
+}
+
+QTabBar::tab:left, QTabBar::tab:right {
+
+}
+
+QTabBar::tab:left:selected {
+
+}
+
+QTabBar::tab:right:selected {
+
+}
+
+QTabBar::tab:left:last, QTabBar::tab:right:last,
+QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
+
+}
+
+
+
+QComboBox {
+    border: 1px solid rgb(77, 77, 77);
+    border-radius: 3px;
+    margin: 5px;
+    padding: 5px;
+    min-width: 6em;
+    min-height: 30px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 30px;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    border-left-width: 1px;
+    border-left-color: rgb(77, 77, 77);
+    border-left-style: solid; /* just a single line */
+    border-top-right-radius: 3px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 3px;
+}
+
+QComboBox::down-arrow {
+    image: url(/home/kurt/Desktop/arrow.png);
+}
+
+QComboBox::down-arrow:on { /* shift the arrow when popup is open */
+    top: 1px;
+    left: 1px;
+}
+
+QAbstractItemView {
+    color: white;
+    background-color: rgb(33, 35, 45);
+    border: 1px solid rgb(77, 77, 77);
+    border-radius: 5px;
+}
+
+QAbstractItemView::item {
+    background-color: transparent;
+    min-height: 30px;
+}
+
+QAbstractItemView::item:selected {
+    background-color: rgb(101, 67, 33);
+}
+
+QListView {
+    background: blue;
+}
+
+
+
+/*===========================================================================*/
+/*                              QScrollBar                                   */
+/*===========================================================================*/
+
+QTableView QScrollBar:horizontal {
+    margin: 0px 0px -1px -1px
+}
+
+QTableView QScrollBar:vertical {
+    margin: -1px -1px 0px 0px
+}
+
+
+QScrollBar:horizontal {
+    border: 1px solid rgb(77, 77, 77);;
+    border-radius: 3px;
+    background: transparent;
+    height: 30px;
+    margin: 0px 0px 0px 0px
+}
+
+QScrollBar::handle:horizontal {
+    border: 1px solid rgb(77, 77, 77);
+    border-radius: 3px;
+    margin: 1px;
+    margin: 1px 21px 1px 21px;
+    background: gray;
+    min-width: 40px;
+    max-width: 50px;
+}
+
+QScrollBar::add-line:horizontal {
+    border-left: 1px solid rgb(77, 77, 77);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: transparent;
+    width: 20px;
+    subcontrol-position: right;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:horizontal {
+    border-right: 1px solid rgb(77, 77, 77);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: transparent;
+    width: 20px;
+    subcontrol-position: left;
+    subcontrol-origin: margin;
+}
+
+QScrollBar:left-arrow:horizontal{
+     image: url(/home/kurt/Desktop/arrow-left.png);
+}
+
+QScrollBar::right-arrow:horizontal {
+     image: url(/home/kurt/Desktop/arrow-right.png);
+}
+
+
+QScrollBar:vertical {
+    border: 1px solid rgb(77, 77, 77);;
+    border-radius: 3px;
+    background: transparent;
+    width: 30px;
+    margin: 0px 0px 0px 0px;
+}
+
+QScrollBar::handle:vertical {
+    border: 1px solid rgb(77, 77, 77);
+    border-radius: 3px;
+    margin: 21px 1px 21px 1px;
+    background: gray;
+    min-height: 40px;
+}
+
+QScrollBar::sub-line:vertical {
+    border-bottom: 1px solid rgb(77, 77, 77);
+    margin-left: 5px;
+    margin-right: 5px;
+    background: transparent;
+    height: 20px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::add-line:vertical {
+    border-top: 1px solid rgb(77, 77, 77);
+    margin-left: 5px;
+    margin-right: 5px;
+    background: transparent;
+    height: 20px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::up-arrow:vertical {
+     image: url(/home/kurt/Desktop/arrow-up.png);
+}
+
+QScrollBar::down-arrow:vertical {
+     image: url(/home/kurt/Desktop/arrow-down.png);
+}
