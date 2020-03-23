@@ -3,6 +3,9 @@ from setuptools import setup, find_packages
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
+with open("entry_points.ini", "r") as fh:
+    entry_points = fh.read()
+
 setup(
     name="Blue Control",
     version="0.0.1",
@@ -15,12 +18,5 @@ setup(
     download_url="https://github.com/USERNAME/REPO/tarball/master",
     packages=find_packages(),
     include_package_data=True,
-    entry_points={
-        'gui_scripts': [
-            'blue-control=blue_control:main',
-        ],
-        'qtpyvcp.vcp': [
-            'blue-control=blue_control',
-        ],
-    },
+    entry_points=entry_points
 )
