@@ -11,6 +11,37 @@ QsciScintilla {
     qproperty-marginbackgroundcolor: #2e313f;
 }
 
+
+
+
+
+QMenuBar {
+
+}
+
+QMenuBar::item {
+    spacing: 3px;
+    padding: 4px 5px;
+    color: grey;
+    /* sets background of item. set to something non-transparent
+       if you want menu color and item color to be different */
+    background: transparent;
+}
+
+QMenuBar::item:selected {
+    color: rgb(200, 200, 200);
+    background-color: rgb(20, 20, 30);
+}
+
+QMenuBar::item:pressed {
+
+}
+
+
+
+
+
+
 QMenu {
     background-color: #ABABAB; /* sets background of the menu */
     border: 1px solid rgb(77, 77, 77);
@@ -18,13 +49,14 @@ QMenu {
 }
 
 QMenu::item {
-    /* sets background of menu item. set this to something non-transparent
-        if you want menu color and menu item color to be different */
+    /* sets background of item. set to something non-transparent
+       if you want menu color and item color to be different */
     background-color: transparent;
 }
 
 QMenu::item:selected { /* when user selects item using mouse or keyboard */
-    background-color: rgb(101, 67, 33);
+    color: rgb(200, 200, 200);
+    background-color: rgb(20, 20, 30);
 }
 
 QMenu::item:disabled { /* when user selects item using mouse or keyboard */
@@ -232,9 +264,16 @@ QComboBox::down-arrow:on { /* shift the arrow when popup is open */
     left: 1px;
 }
 
+
+QListView {
+    background: blue;
+}
+
+
 QAbstractItemView {
     color: white;
     background-color: rgb(33, 35, 45);
+    alternate-background-color: rgb(30, 30, 40);
     border: 1px solid rgb(77, 77, 77);
     border-radius: 5px;
 }
@@ -245,30 +284,30 @@ QAbstractItemView::item {
 }
 
 QAbstractItemView::item:selected {
-    background-color: rgb(101, 67, 33);
+    color: rgb(200, 200, 200);
+    background-color: rgb(20, 20, 30);
 }
-
-QListView {
-    background: blue;
-}
-
 
 /*===========================================================================*/
 /*                              QSpinBox                                     */
 /*===========================================================================*/
 
 
-QSpinBox {
-    min-height: 35px;
+QSpinBox,
+QDoubleSpinBox {
+    min-height: 25px;
+    min-width: 150px;
     border: 1px solid rgb(77, 77, 77);
     border-radius: 3px;
 }
 
-QSpinBox:focus {
+QSpinBox:focus,
+QDoubleSpinBox:focus {
     border-color: rgb(77, 177, 177);
 }
 
-QSpinBox::up-button {
+QSpinBox::up-button,
+QDoubleSpinBox::up-button {
     subcontrol-origin: margin;
     subcontrol-position: center right;
     width: 35px;
@@ -276,23 +315,30 @@ QSpinBox::up-button {
     border-left: 1px solid rgb(77, 77, 77);
 }
 
-QSpinBox::up-button:hover {
+QSpinBox::up-bottom:hover,
+QDoubleSpinBox::up-button:hover {
     border-image: url(:/images/spinup_hover.png) 1;
 }
 
-QSpinBox::up-button:pressed {
+QSpinBox::up-button:pressed,
+QDoubleSpinBox::up-button:pressed {
     border-image: url(:/images/spinup_pressed.png) 1;
 }
 
-QSpinBox::up-arrow {
+QSpinBox::up-arrow,
+QDoubleSpinBox::up-arrow {
     image: url(icons/plus.png);
 }
 
-QSpinBox::up-arrow:disabled, QSpinBox::up-arrow:off { /* off state when value is max */
+QSpinBox::up-arrow:off,
+QSpinBox::up-arrow:disabled,
+QDoubleSpinBox::up-arrow:off,
+QDoubleSpinBox::up-arrow:disabled { /* off state when value is max */
    image: url(:/images/up_arrow_disabled.png);
 }
 
-QSpinBox::down-button {
+QSpinBox::down-button,
+QDoubleSpinBox::down-button {
     subcontrol-origin: margin;
     subcontrol-position: center left;
 
@@ -301,29 +347,27 @@ QSpinBox::down-button {
     border-right: 1px solid rgb(77, 77, 77);
 }
 
-QSpinBox::down-button:hover {
+QSpinBox::down-button:hover,
+QDoubleSpinBox::down-button:hover {
     border-image: url(:/images/spindown_hover.png) 1;
 }
 
-QSpinBox::down-button:pressed {
+QSpinBox::down-button:pressed,
+QDoubleSpinBox::down-button:pressed {
     border-image: url(:/images/spindown_pressed.png) 1;
 }
 
-QSpinBox::down-arrow {
+QSpinBox::down-arrow,
+QDoubleSpinBox::down-arrow {
     image: url(icons/minus.png);
 }
 
+QSpinBox::down-arrow:off,
 QSpinBox::down-arrow:disabled,
-QSpinBox::down-arrow:off { /* off state when value in min */
-   image: url(icons/arrow-down.png);
+QDoubleSpinBox::down-arrow:off,
+QDoubleSpinBox::down-arrow:disabled { /* off state when value in min */
+   border-image: url(:/icons/spindown_pressed.png);
 }
-
-
-
-
-
-
-
 
 
 
@@ -338,7 +382,6 @@ QHeaderView {
     height: 25px;
 }
 
-
 QHeaderView::section {
     color: white;
     padding-left: 0px;
@@ -347,12 +390,11 @@ QHeaderView::section {
 
 
 QHeaderView::section {
-background-color: red;
+background-color: rgb(77, 77, 77);
 color: white;
 padding-left: 4px;
-border: 1px solid green;
+/* border: 1px solid green; */
 }
-
 
 QHeaderView::section:checked
 {
