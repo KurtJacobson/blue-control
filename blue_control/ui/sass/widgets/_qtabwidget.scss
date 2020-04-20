@@ -1,0 +1,38 @@
+/*===========================================================================*/
+/*                               QTabWidget                                  */
+/*===========================================================================*/
+
+QTabWidget {
+    background: rgb(33, 35, 45);
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+QTabWidget::pane {
+    background: red;
+}
+
+
+QTabWidget::tab-bar {
+    alignment: center;
+    width: 999999px;
+}
+
+QTabWidget::tab-bar:top {
+    top: 0px;
+    border: 1px solid black;
+}
+
+QTabWidget::tab-bar:bottom {
+    bottom: 1px;
+}
+
+QTabWidget::tab-bar:left {
+    right: 10px;
+}
+
+QTabWidget::tab-bar:right {
+    left: 1px;
+}
+

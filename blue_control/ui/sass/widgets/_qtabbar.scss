@@ -1,0 +1,79 @@
+/*===========================================================================*/
+/*                                QTabBar                                    */
+/*===========================================================================*/
+
+QTabBar {
+    color: white;
+    background: none;
+    border-top: 1px solid rgb(77, 77, 77);
+    border-bottom:  1px solid rgb(77, 77, 77);
+}
+
+QTabBar::tab {
+    border: 1px solid rgb(77, 77, 77);
+    border-radius: 4px;
+    margin: 5px;
+}
+
+QTabBar::tab:selected {
+    background: rgb(0, 170, 0);
+}
+
+QTabBar::tab:!selected {
+    background: rgb(17, 0, 30);
+}
+
+QTabBar::tab:!selected:hover {
+    background: #999;
+}
+
+QTabBar::tab:top:!selected {
+
+}
+
+QTabBar::tab:bottom:!selected {
+
+}
+
+QTabBar::tab:top, QTabBar::tab:bottom {
+    min-width: 8ex;
+    padding: 5px 10px 5px 10px;
+}
+
+QTabBar::tab:top:selected {
+
+}
+
+QTabBar::tab:bottom:selected {
+
+}
+
+QTabBar::tab:top:last, QTabBar::tab:bottom:last,
+QTabBar::tab:top:only-one, QTabBar::tab:bottom:only-one {
+
+}
+
+QTabBar::tab:left:!selected {
+
+}
+
+QTabBar::tab:right:!selected {
+
+}
+
+QTabBar::tab:left, QTabBar::tab:right {
+
+}
+
+QTabBar::tab:left:selected {
+
+}
+
+QTabBar::tab:right:selected {
+
+}
+
+QTabBar::tab:left:last, QTabBar::tab:right:last,
+QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
+
+}
