@@ -2,26 +2,31 @@
 /*                             QScrollBar                                    */
 /*===========================================================================*/
 
+$handle-background: lighten($background, 4%);
+$handle-border: darken($border-color, 4%);
+$secondary-border-color: darken($border-color, 8%);
+
+
 QScrollBar:horizontal {
-    border: 1px solid rgb(77, 77, 77);;
-    border-radius: 3px;
-    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 0px;
+    background: lighten($background, 0%);
     height: 30px;
     margin: 0px 0px 0px 0px
 }
 
 QScrollBar::handle:horizontal {
-    border: 1px solid rgb(77, 77, 77);
-    border-radius: 3px;
+    border: 1px solid $handle-border;
+    border-radius: 2px;
     margin: 1px;
     margin: 1px 21px 1px 21px;
-    background: gray;
+    background: $handle-background;
     min-width: 40px;
     max-width: 50px;
 }
 
 QScrollBar::add-line:horizontal {
-    border-left: 1px solid rgb(77, 77, 77);
+    border-left: 1px solid $secondary-border-color;
     margin-top: 5px;
     margin-bottom: 5px;
     background: transparent;
@@ -31,7 +36,7 @@ QScrollBar::add-line:horizontal {
 }
 
 QScrollBar::sub-line:horizontal {
-    border-right: 1px solid rgb(77, 77, 77);
+    border-right: 1px solid $secondary-border-color;
     margin-top: 5px;
     margin-bottom: 5px;
     background: transparent;
@@ -50,7 +55,7 @@ QScrollBar::right-arrow:horizontal {
 
 
 QScrollBar:vertical {
-    border: 1px solid rgb(77, 77, 77);;
+    border: 1px solid transparent;
     border-radius: 3px;
     background: transparent;
     width: 30px;
@@ -58,15 +63,15 @@ QScrollBar:vertical {
 }
 
 QScrollBar::handle:vertical {
-    border: 1px solid rgb(77, 77, 77);
+    border: 1px solid $handle-border;
     border-radius: 3px;
     margin: 21px 1px 21px 1px;
-    background: gray;
+    background: $handle-background;
     min-height: 40px;
 }
 
 QScrollBar::sub-line:vertical {
-    border-bottom: 1px solid rgb(77, 77, 77);
+    border-bottom: 1px solid $secondary-border-color;
     margin-left: 5px;
     margin-right: 5px;
     background: transparent;
@@ -76,7 +81,7 @@ QScrollBar::sub-line:vertical {
 }
 
 QScrollBar::add-line:vertical {
-    border-top: 1px solid rgb(77, 77, 77);
+    border-top: 1px solid $secondary-border-color;
     margin-left: 5px;
     margin-right: 5px;
     background: transparent;
@@ -91,4 +96,10 @@ QScrollBar::up-arrow:vertical {
 
 QScrollBar::down-arrow:vertical {
      image: url(icons/arrow-down.png);
+}
+
+
+QTableCornerButton::section {
+    background: red;
+    border: 2px outset red;
 }

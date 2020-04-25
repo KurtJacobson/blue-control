@@ -1,5 +1,9 @@
 @import 'defaults';
+
 @import 'widgets/qwidget';
+
+@import 'widgets/qabstractitemview';
+
 @import 'widgets/qpushbutton';
 @import 'widgets/qlineedit';
 @import 'widgets/qspinbox';
@@ -9,3 +13,8 @@
 @import 'widgets/qtabwidget';
 @import 'widgets/qmenu';
 @import 'widgets/qmenubar';
+@import 'widgets/qheaderview';
+@import 'widgets/qgroupbox';
+
+// VCP specific styles
+@import 'vcp_layout';

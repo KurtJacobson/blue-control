@@ -33,25 +33,3 @@ QComboBox::down-arrow:on { /* shift the arrow when popup is open */
     top: 1px;
     left: 1px;
 }
-
-
-
-
-QAbstractItemView {
-    color: white;
-    background-color: rgb(33, 35, 45);
-    alternate-background-color: rgb(30, 30, 40);
-    border: 1px solid rgb(77, 77, 77);
-    border-radius: 5px;
-}
-
-QAbstractItemView::item {
-    background-color: transparent;
-    min-height: 30px;
-}
-
-QAbstractItemView::item:selected {
-    color: rgb(200, 200, 200);
-    background-color: rgb(20, 20, 30);
-}
-
