@@ -1,0 +1,94 @@
+/*===========================================================================*/
+/*                             QScrollBar                                    */
+/*===========================================================================*/
+
+QScrollBar:horizontal {
+    border: 1px solid rgb(77, 77, 77);;
+    border-radius: 3px;
+    background: transparent;
+    height: 30px;
+    margin: 0px 0px 0px 0px
+}
+
+QScrollBar::handle:horizontal {
+    border: 1px solid rgb(77, 77, 77);
+    border-radius: 3px;
+    margin: 1px;
+    margin: 1px 21px 1px 21px;
+    background: gray;
+    min-width: 40px;
+    max-width: 50px;
+}
+
+QScrollBar::add-line:horizontal {
+    border-left: 1px solid rgb(77, 77, 77);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: transparent;
+    width: 20px;
+    subcontrol-position: right;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:horizontal {
+    border-right: 1px solid rgb(77, 77, 77);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: transparent;
+    width: 20px;
+    subcontrol-position: left;
+    subcontrol-origin: margin;
+}
+
+QScrollBar:left-arrow:horizontal{
+     image: url(icons/arrow-left.png);
+}
+
+QScrollBar::right-arrow:horizontal {
+     image: url(icons/arrow-right.png);
+}
+
+
+QScrollBar:vertical {
+    border: 1px solid rgb(77, 77, 77);;
+    border-radius: 3px;
+    background: transparent;
+    width: 30px;
+    margin: 0px 0px 0px 0px;
+}
+
+QScrollBar::handle:vertical {
+    border: 1px solid rgb(77, 77, 77);
+    border-radius: 3px;
+    margin: 21px 1px 21px 1px;
+    background: gray;
+    min-height: 40px;
+}
+
+QScrollBar::sub-line:vertical {
+    border-bottom: 1px solid rgb(77, 77, 77);
+    margin-left: 5px;
+    margin-right: 5px;
+    background: transparent;
+    height: 20px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::add-line:vertical {
+    border-top: 1px solid rgb(77, 77, 77);
+    margin-left: 5px;
+    margin-right: 5px;
+    background: transparent;
+    height: 20px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::up-arrow:vertical {
+     image: url(icons/arrow-up.png);
+}
+
+QScrollBar::down-arrow:vertical {
+     image: url(icons/arrow-down.png);
+}

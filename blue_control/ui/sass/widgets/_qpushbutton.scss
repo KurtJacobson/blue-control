@@ -1,0 +1,18 @@
+/*===========================================================================*/
+/*                             QPushButton                                   */
+/*===========================================================================*/
+
+QPushButton {
+    color: $text-color;
+    background: lighten( $background, 4%);
+    border: $border;
+    border-radius: $border-radius;
+    min-height: 25px;
+    min-width: 50px;
+}
+
+QPushButton:hover,
+QPushButton:focus {
+    background: $accent;
+    color: $background;
+}

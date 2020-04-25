@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>961</width>
-    <height>703</height>
+    <height>695</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -231,16 +231,85 @@ QListView::item:hover {
             <attribute name="title">
              <string>Page</string>
             </attribute>
-            <widget class="MyLineEdit" name="mylineedit">
-             <property name="geometry">
-              <rect>
-               <x>150</x>
-               <y>70</y>
-               <width>108</width>
-               <height>25</height>
-              </rect>
-             </property>
-            </widget>
+            <layout class="QVBoxLayout" name="verticalLayout_6">
+             <item>
+              <widget class="FileSystemTable" name="filesystemtable">
+               <property name="verticalScrollBarPolicy">
+                <enum>Qt::ScrollBarAsNeeded</enum>
+               </property>
+               <property name="horizontalScrollBarPolicy">
+                <enum>Qt::ScrollBarAsNeeded</enum>
+               </property>
+               <property name="alternatingRowColors">
+                <bool>true</bool>
+               </property>
+               <property name="verticalScrollMode">
+                <enum>QAbstractItemView::ScrollPerPixel</enum>
+               </property>
+               <property name="horizontalScrollMode">
+                <enum>QAbstractItemView::ScrollPerPixel</enum>
+               </property>
+               <property name="showGrid">
+                <bool>false</bool>
+               </property>
+               <property name="wordWrap">
+                <bool>true</bool>
+               </property>
+               <property name="cornerButtonEnabled">
+                <bool>true</bool>
+               </property>
+               <property name="hiddenColumns" stdset="0">
+                <string>2</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_5">
+               <item>
+                <widget class="QPushButton" name="pushButton_3">
+                 <property name="text">
+                  <string>cd ..</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_4">
+                 <property name="text">
+                  <string>Up</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>icons/arrow-up.png</normaloff>icons/arrow-up.png</iconset>
+                 </property>
+                 <property name="autoRepeat">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_6">
+                 <property name="text">
+                  <string>Down</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>icons/arrow-down.png</normaloff>icons/arrow-down.png</iconset>
+                 </property>
+                 <property name="autoRepeat">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_5">
+                 <property name="text">
+                  <string>Open</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
            </widget>
            <widget class="QWidget" name="tab_4">
             <attribute name="title">
@@ -337,6 +406,16 @@ p, li { white-space: pre-wrap; }
                </property>
               </widget>
              </widget>
+            </widget>
+            <widget class="MyLineEdit" name="mylineedit">
+             <property name="geometry">
+              <rect>
+               <x>80</x>
+               <y>220</y>
+               <width>241</width>
+               <height>71</height>
+              </rect>
+             </property>
             </widget>
            </widget>
            <widget class="QWidget" name="tab_7">
@@ -499,6 +578,11 @@ p, li { white-space: pre-wrap; }
  <layoutdefault spacing="6" margin="9"/>
  <customwidgets>
   <customwidget>
+   <class>FileSystemTable</class>
+   <extends>QTableView</extends>
+   <header>qtpyvcp.widgets.input_widgets.file_system</header>
+  </customwidget>
+  <customwidget>
    <class>MyLineEdit</class>
    <extends>QLineEdit</extends>
    <header>blue_control.widgets.my_line_edit</header>
@@ -532,5 +616,70 @@ p, li { white-space: pre-wrap; }
   </customwidget>
  </customwidgets>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>pressed()</signal>
+   <receiver>filesystemtable</receiver>
+   <slot>selectPrevious()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>175</x>
+     <y>445</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>176</x>
+     <y>389</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_6</sender>
+   <signal>pressed()</signal>
+   <receiver>filesystemtable</receiver>
+   <slot>selectNext()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>303</x>
+     <y>455</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>280</x>
+     <y>385</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_5</sender>
+   <signal>pressed()</signal>
+   <receiver>filesystemtable</receiver>
+   <slot>openSelectedItem()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>381</x>
+     <y>453</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>375</x>
+     <y>377</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>pressed()</signal>
+   <receiver>filesystemtable</receiver>
+   <slot>viewParentDirectory()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>103</x>
+     <y>463</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>101</x>
+     <y>340</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
