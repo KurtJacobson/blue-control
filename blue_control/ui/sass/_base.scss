@@ -1,20 +1,32 @@
 @import 'defaults';
 
+// base widgets
 @import 'widgets/qwidget';
 
-@import 'widgets/qabstractitemview';
-
+// button widgets
 @import 'widgets/qpushbutton';
+@import 'widgets/qtoolbutton';
+
+// input widgets
+@import 'widgets/qcombobox';
 @import 'widgets/qlineedit';
 @import 'widgets/qspinbox';
 @import 'widgets/qscrollbar';
-@import 'widgets/qcombobox';
+
+// container widgets
+@import 'widgets/qgroupbox';
 @import 'widgets/qtabbar';
 @import 'widgets/qtabwidget';
+
+// item views
+@import 'widgets/qabstractitemview';
 @import 'widgets/qmenu';
 @import 'widgets/qmenubar';
 @import 'widgets/qheaderview';
-@import 'widgets/qgroupbox';
+
+// display widgets
+@import 'widgets/qlabel';
+
 
 // VCP specific styles
 @import 'vcp_layout';

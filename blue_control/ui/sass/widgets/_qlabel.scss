@@ -1,9 +1,7 @@
 /*===========================================================================*/
-/*                                QWidget                                    */
+/*                                 QLabel                                    */
 /*===========================================================================*/
 
-QWidget {
-  background: $background;
-  color: $text-color;
-  font: $font-stack;
+QLabel {
+  background: transparent;
 }
