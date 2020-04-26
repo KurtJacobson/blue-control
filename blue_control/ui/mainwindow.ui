@@ -65,7 +65,7 @@
           <bool>true</bool>
          </property>
          <property name="checked">
-          <bool>true</bool>
+          <bool>false</bool>
          </property>
          <property name="actionName" stdset="0">
           <string>machine.estop.toggle</string>
@@ -76,7 +76,7 @@
         <widget class="ActionButton" name="actionbutton_3">
          <property name="icon">
           <iconset>
-           <normaloff>icons/SVG/e-stop.svg</normaloff>icons/SVG/e-stop.svg</iconset>
+           <normaloff>icons/power-off.png</normaloff>icons/power-off.png</iconset>
          </property>
          <property name="iconSize">
           <size>
