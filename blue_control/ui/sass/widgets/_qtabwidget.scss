@@ -3,36 +3,54 @@
 /*===========================================================================*/
 
 QTabWidget {
-    background: rgb(33, 35, 45);
-    padding: 0px;
-    margin: 0px;
-    border: none;
+    border: $border;
+    border-radius: 5px;
+    background: lighten($background, 4%);
 }
 
 QTabWidget::pane {
-    background: red;
+  border: $border;
+  border-radius: 3px;
+  padding: 1px;
+  // background: lighten($background, 4%);
 }
 
+QTabWidget[tabPosition="0"]::pane { //top tabs
+  margin-top: -1px;
+  border-top-left-radius: 0px;
+}
+
+QTabWidget[tabPosition="1"]::pane { //bottom tabs
+  margin-bottom: -1px;
+  border-bottom-left-radius: 0px;
+}
+
+QTabWidget[tabPosition="2"]::pane { //west tabs
+  margin-left: -1px;
+  border-top-left-radius: 0px;
+}
+
+QTabWidget[tabPosition="3"]::pane { //east tabs
+  margin-right: -1px;
+  border-top-right-radius: 0px;
+}
 
 QTabWidget::tab-bar {
-    alignment: center;
-    width: 999999px;
+
 }
 
 QTabWidget::tab-bar:top {
-    top: 0px;
-    border: 1px solid black;
+
 }
 
 QTabWidget::tab-bar:bottom {
-    bottom: 1px;
+
 }
 
 QTabWidget::tab-bar:left {
-    right: 10px;
+
 }
 
 QTabWidget::tab-bar:right {
-    left: 1px;
-}
 
+}

@@ -224,57 +224,106 @@ QScrollBar::down-arrow:vertical {
 /*                                QTabBar                                    */
 /*===========================================================================*/
 QTabBar {
-  color: white;
-  background: none;
-  border-top: 1px solid #4d4d4d;
-  border-bottom: 1px solid #4d4d4d; }
+  color: #727271;
+  background: none; }
 
 QTabBar::tab {
-  border: 1px solid #4d4d4d;
-  border-radius: 4px;
-  margin: 5px; }
+  border: 1px solid #00507e;
+  border-radius: 3px; }
+
+QTabBar::tab:top,
+QTabBar::tab:bottom {
+  min-width: 10ex;
+  min-height: 25px;
+  padding: 0px 10px 0px 10px; }
+
+QTabBar::tab:left,
+QTabBar::tab:right {
+  min-height: 10ex;
+  min-width: 25px;
+  padding: 10px 0px 10px 0px; }
+
+QTabBar::tab:top {
+  border-bottom: none;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px; }
+
+QTabBar::tab:bottom {
+  border-top: none;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px; }
+
+QTabBar::tab:left {
+  border-left: none;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px; }
+
+QTabBar::tab:right {
+  border-right: none;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px; }
 
 QTabBar::tab:selected {
-  background: #00aa00; }
+  background: #003158; }
 
 QTabBar::tab:!selected {
-  background: #11001e; }
+  background: #002644; }
+
+QTabBar::tab:top:!selected {
+  border-bottom: 1px solid #00507e;
+  margin-top: 1px; }
+
+QTabBar::tab:bottom:!selected {
+  border-top: 1px solid #00507e;
+  margin-bottom: 1px; }
+
+QTabBar::tab:left:!selected {
+  border-left: 1px solid #00507e;
+  margin-right: 1px; }
+
+QTabBar::tab:right:!selected {
+  border-right: 1px solid #00507e;
+  margin-left: 1px; }
+
+QTabBar::tab:top:!first,
+QTabBar::tab:bottom:!first {
+  margin-left: -1px; }
+
+QTabBar::tab:left:!first,
+QTabBar::tab:right:!first {
+  margin-top: -1px; }
 
 QTabBar::tab:!selected:hover {
-  background: #999; }
-
-QTabBar::tab:top, QTabBar::tab:bottom {
-  min-width: 8ex;
-  padding: 5px 10px 5px 10px; }
+  background: #003158; }
 
 /*===========================================================================*/
 /*                               QTabWidget                                  */
 /*===========================================================================*/
 QTabWidget {
-  background: #21232d;
-  padding: 0px;
-  margin: 0px;
-  border: none; }
+  border: 1px solid #00507e;
+  border-radius: 5px;
+  background: #003158; }
 
 QTabWidget::pane {
-  background: red; }
+  border: 1px solid #00507e;
+  border-radius: 3px;
+  padding: 1px; }
 
-QTabWidget::tab-bar {
-  alignment: center;
-  width: 999999px; }
+QTabWidget[tabPosition="0"]::pane {
+  margin-top: -1px;
+  border-top-left-radius: 0px; }
 
-QTabWidget::tab-bar:top {
-  top: 0px;
-  border: 1px solid black; }
+QTabWidget[tabPosition="1"]::pane {
+  margin-bottom: -1px;
+  border-bottom-left-radius: 0px; }
 
-QTabWidget::tab-bar:bottom {
-  bottom: 1px; }
+QTabWidget[tabPosition="2"]::pane {
+  margin-left: -1px;
+  border-top-left-radius: 0px; }
 
-QTabWidget::tab-bar:left {
-  right: 10px; }
-
-QTabWidget::tab-bar:right {
-  left: 1px; }
+QTabWidget[tabPosition="3"]::pane {
+  margin-right: -1px;
+  border-top-right-radius: 0px; }
 
 /*===========================================================================*/
 /*                         QAbstractItemView                                 */

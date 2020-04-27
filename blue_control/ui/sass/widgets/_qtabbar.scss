@@ -3,77 +3,91 @@
 /*===========================================================================*/
 
 QTabBar {
-    color: white;
+    color: $text-color;
     background: none;
-    border-top: 1px solid rgb(77, 77, 77);
-    border-bottom:  1px solid rgb(77, 77, 77);
 }
 
 QTabBar::tab {
-    border: 1px solid rgb(77, 77, 77);
-    border-radius: 4px;
-    margin: 5px;
+    border: $border;
+    border-radius: 3px;
+}
+
+QTabBar::tab:top,
+QTabBar::tab:bottom {
+    min-width: 10ex;
+    min-height: 25px;
+    padding: 0px 10px 0px 10px;
+}
+
+QTabBar::tab:left,
+QTabBar::tab:right {
+    min-height: 10ex;
+    min-width: 25px;
+    padding: 10px 0px 10px 0px;
+}
+
+QTabBar::tab:top {
+  border-bottom: none;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+QTabBar::tab:bottom {
+  border-top: none;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+QTabBar::tab:left { //east
+  border-left: none;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+QTabBar::tab:right { //west
+  border-right: none;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 QTabBar::tab:selected {
-    background: rgb(0, 170, 0);
+    background: lighten($background, 4%);
 }
 
 QTabBar::tab:!selected {
-    background: rgb(17, 0, 30);
-}
-
-QTabBar::tab:!selected:hover {
-    background: #999;
+    background: $background;
 }
 
 QTabBar::tab:top:!selected {
-
+    border-bottom: $border;
+    margin-top: 1px;
 }
 
 QTabBar::tab:bottom:!selected {
-
+    border-top: $border;
+    margin-bottom: 1px;
 }
 
-QTabBar::tab:top, QTabBar::tab:bottom {
-    min-width: 8ex;
-    padding: 5px 10px 5px 10px;
+QTabBar::tab:left:!selected { //east
+    border-left: $border;
+    margin-right: 1px;
 }
 
-QTabBar::tab:top:selected {
-
+QTabBar::tab:right:!selected { //west
+    border-right: $border;
+    margin-left: 1px; 
 }
 
-QTabBar::tab:bottom:selected {
-
+QTabBar::tab:top:!first,
+QTabBar::tab:bottom:!first{
+    margin-left: -1px;
 }
 
-QTabBar::tab:top:last, QTabBar::tab:bottom:last,
-QTabBar::tab:top:only-one, QTabBar::tab:bottom:only-one {
-
+QTabBar::tab:left:!first,
+QTabBar::tab:right:!first{
+    margin-top: -1px;
 }
 
-QTabBar::tab:left:!selected {
-
-}
-
-QTabBar::tab:right:!selected {
-
-}
-
-QTabBar::tab:left, QTabBar::tab:right {
-
-}
-
-QTabBar::tab:left:selected {
-
-}
-
-QTabBar::tab:right:selected {
-
-}
-
-QTabBar::tab:left:last, QTabBar::tab:right:last,
-QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
-
+QTabBar::tab:!selected:hover {
+  background: lighten($background, 4%);
 }
