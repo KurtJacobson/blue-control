@@ -1,0 +1,68 @@
+/*===========================================================================*/
+/*                               QSlider                                     */
+/*===========================================================================*/
+
+QSlider:horizontal {
+  min-height: 35px;
+}
+
+QSlider:vertical {
+  min-width: 35px;
+}
+
+QSlider::groove {
+    border: $border;
+    border-radius: 3px;
+}
+
+QSlider::groove:horizontal {
+    height: 15px;
+}
+
+QSlider::groove:vertical {
+    width: 15px;
+}
+
+QSlider::handle {
+  background: lighten($background, 4%);
+  border: $border;
+  border-radius: 3px;
+  width: 50px;
+  height: 50px;
+}
+
+QSlider::handle:horizontal {
+  margin-top: -10px;
+  margin-bottom: -10px;
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
+QSlider::handle:vertical {
+  margin-top: 1px;
+  margin-bottom: 1px;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+QSlider::add-page,
+QSlider::sub-page {
+  margin: 1px;
+  border-radius: 3px;
+}
+
+QSlider::add-page:horizontal {
+  background: lighten($background, 3%);
+}
+
+QSlider::sub-page:horizontal {
+  background: lighten($background, 1%);;
+}
+
+QSlider::add-page:vertical {
+  background: lighten($background, 1%);
+}
+
+QSlider::sub-page:vertical {
+  background: lighten($background, 3%);;
+}
