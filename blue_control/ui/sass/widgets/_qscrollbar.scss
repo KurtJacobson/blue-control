@@ -6,7 +6,6 @@ $handle-background: lighten($background, 4%);
 $handle-border: darken($border-color, 4%);
 $secondary-border-color: darken($border-color, 8%);
 
-
 QScrollBar:horizontal {
     border: 1px solid transparent;
     border-radius: 0px;
@@ -18,7 +17,6 @@ QScrollBar:horizontal {
 QScrollBar::handle:horizontal {
     border: 1px solid $handle-border;
     border-radius: 2px;
-    margin: 1px;
     margin: 1px 21px 1px 21px;
     background: $handle-background;
     min-width: 40px;
@@ -27,8 +25,6 @@ QScrollBar::handle:horizontal {
 
 QScrollBar::add-line:horizontal {
     border-left: 1px solid $secondary-border-color;
-    margin-top: 5px;
-    margin-bottom: 5px;
     background: transparent;
     width: 20px;
     subcontrol-position: right;
@@ -37,8 +33,6 @@ QScrollBar::add-line:horizontal {
 
 QScrollBar::sub-line:horizontal {
     border-right: 1px solid $secondary-border-color;
-    margin-top: 5px;
-    margin-bottom: 5px;
     background: transparent;
     width: 20px;
     subcontrol-position: left;
@@ -52,7 +46,6 @@ QScrollBar:left-arrow:horizontal{
 QScrollBar::right-arrow:horizontal {
      image: url(icons/arrow-right.png);
 }
-
 
 QScrollBar:vertical {
     border: 1px solid transparent;
@@ -72,8 +65,6 @@ QScrollBar::handle:vertical {
 
 QScrollBar::sub-line:vertical {
     border-bottom: 1px solid $secondary-border-color;
-    margin-left: 5px;
-    margin-right: 5px;
     background: transparent;
     height: 20px;
     subcontrol-position: top;
@@ -82,8 +73,6 @@ QScrollBar::sub-line:vertical {
 
 QScrollBar::add-line:vertical {
     border-top: 1px solid $secondary-border-color;
-    margin-left: 5px;
-    margin-right: 5px;
     background: transparent;
     height: 20px;
     subcontrol-position: bottom;
