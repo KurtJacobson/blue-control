@@ -18,6 +18,7 @@ QToolButton:hover {
 
 QToolButton:pressed {
   border: $border;
+  border-color: darken($border-color, 5%);
 }
 
 QToolButton:disabled {

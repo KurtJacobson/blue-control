@@ -27,8 +27,18 @@ QPushButton {
 
 QPushButton:hover,
 QPushButton:focus {
-  background: #234b0d;
-  color: #002644; }
+  background: #003763; }
+
+QPushButton:disabled {
+  color: #656564;
+  background: #002c4e;
+  border-color: #003a68; }
+
+QPushButton:pressed {
+  border-color: #004065;
+  border-width: 2px 1px 1px 2px;
+  background-origin: content;
+  padding: 2px 0px 0px 2px; }
 
 /*===========================================================================*/
 /*                             QToolButton                                   */
@@ -46,7 +56,8 @@ QToolButton:hover {
   background: #003158; }
 
 QToolButton:pressed {
-  border: 1px solid #00507e; }
+  border: 1px solid #00507e;
+  border-color: #004065; }
 
 QToolButton:disabled {
   /* need to find a way to indicate disabled state */ }

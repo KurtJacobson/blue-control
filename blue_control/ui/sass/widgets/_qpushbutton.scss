@@ -15,4 +15,16 @@ QPushButton:hover,
 QPushButton:focus {
     background: $accent;
     color: $background;
+
+QPushButton:disabled {
+  color: darken($text-color, 5%);
+  background: lighten($background, 2%);
+  border-color: lighten($background, 7%);
+}
+
+QPushButton:pressed {
+  border-color: darken($border-color, 5%);
+  border-width: 2px 1px 1px 2px;
+  background-origin: content;
+  padding: 2px 0px 0px 2px;
 }
