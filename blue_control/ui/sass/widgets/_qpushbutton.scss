@@ -13,8 +13,8 @@ QPushButton {
 
 QPushButton:hover,
 QPushButton:focus {
-    background: $accent;
-    color: $background;
+    background: $hover-background;
+}
 
 QPushButton:disabled {
   color: darken($text-color, 5%);
