@@ -28,9 +28,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.8"
-     inkscape:cx="121.94832"
-     inkscape:cy="927.4092"
+     inkscape:zoom="0.7"
+     inkscape:cx="364.16082"
+     inkscape:cy="624.44429"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -57,7 +57,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
         <cc:license
            rdf:resource="" />
       </cc:Work>
@@ -69,8 +69,8 @@
      id="layer1"
      transform="translate(0,-17.60334)">
     <g
-       id="power-off"
-       transform="matrix(7.5596704,0,0,7.5596704,27.994466,-2150.9278)"
+       id="power"
+       transform="matrix(7.5596704,0,0,7.5596704,59.546173,-2169.9628)"
        inkscape:label="#g885">
       <g
          mask="none"
@@ -88,8 +88,8 @@
        id="path877"
        inkscape:connector-curvature="0" />
     <g
-       id="power-on"
-       transform="matrix(3.7795275,0,0,3.7795275,32.004234,-1032.9163)"
+       id="power-checked"
+       transform="matrix(3.7795275,0,0,3.7795275,59.700003,-1047.2663)"
        inkscape:label="#g840">
       <circle
          clip-path="none"
@@ -116,7 +116,7 @@
     </g>
     <g
        id="plus"
-       transform="matrix(11.338584,0,0,11.338584,-240.00004,-3229.9559)"
+       transform="matrix(11.338584,0,0,11.338584,-380.50005,-3174.4559)"
        inkscape:label="#g833">
       <path
          inkscape:connector-curvature="0"
@@ -128,6 +128,23 @@
          id="path4640-3"
          d="m 37.041666,288.53331 c 0,4.23334 0,4.23334 0,4.23334 v 0 0"
          style="fill:none;stroke:#4d4d4d;stroke-width:0.91654354;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       id="power-disabled"
+       transform="matrix(7.5596704,0,0,7.5596704,5.3944656,-2169.9628)"
+       inkscape:label="#g885"
+       inkscape:export-filename="/home/kurt/dev/cnc/blue-control/blue_control/ui/icons/power-disabled.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <g
+         mask="none"
+         id="g831-6" />
+      <path
+         style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#e84e26;fill-opacity:0.39215686;fill-rule:nonzero;stroke:none;stroke-width:1.1816473;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+         d="M 12.003906,-0.00976563 C 5.3967924,-0.00976563 -3.3989357e-6,5.3792226 0,11.986328 c -3.3989354e-6,6.607106 5.3967924,12.001953 12.003906,12.001953 6.607115,0 11.994144,-5.394847 11.994141,-12.001953 3e-6,-6.6071054 -5.387026,-11.99609363 -11.994141,-11.99609363 z M 10.998047,2.0019531 H 13 V 11.998047 H 10.998047 Z M 10.001953,3.65625 v 2.6875 c -2.3219394,0.8285858 -3.9999885,3.0464206 -3.9999999,5.642578 -1.21e-5,3.297789 2.7041562,6 6.0019529,6 3.297798,0 5.9922,-2.702211 5.992188,-6 -1.2e-5,-2.5958928 -1.672558,-4.8138032 -3.992188,-5.642578 v -2.6875 c 3.778264,0.8960504 6.570315,4.2668214 6.570313,8.330078 2e-6,4.754154 -3.816136,8.576172 -8.570313,8.576172 -4.7541752,0 -8.5781272,-3.822018 -8.5781248,-8.576172 -2e-6,-4.0634833 2.7960374,-7.4342166 6.5761718,-8.330078 z"
+         transform="matrix(0.26458333,0,0,0.26458333,0,290.64998)"
+         id="rect819-7"
+         inkscape:connector-curvature="0" />
     </g>
   </g>
 </svg>
