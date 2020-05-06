@@ -484,7 +484,13 @@ QHeaderView::up-arrow {
 /*                                 QLabel                                    */
 /*===========================================================================*/
 QLabel {
-  background: transparent; }
+  background: #00203a;
+  padding: 4; }
+
+QLabel[frameShape='6'] {
+  border: 1px solid #00507e;
+  border-color: #00436a;
+  border-radius: 3px; }
 
 /*===========================================================================*/
 /*                              Misc Widgets                                 */
