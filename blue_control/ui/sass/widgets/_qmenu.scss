@@ -2,24 +2,22 @@
 /*                                 QMenu                                     */
 /*===========================================================================*/
 
-QMenu {
-    background-color: rgb(33, 35, 45);
+QMenu,
+QMenu:disabled {
+    background: fgb(33, 35, 45);
     border: 1px solid rgb(77, 77, 77);
-    border-radius: 3px;
+    border-radius: 4px;
 }
 
 QMenu::item {
-    /* sets background of item. set to something non-transparent
-       if you want menu color and item color to be different */
-    background-color: transparent;
-    min-height: 50px;
+    background: rgb(33, 35, 45);
+    border-radius: 3px;
+    min-height: 30px;
+    min-width: 150px;
+    padding: 0px 20px 0px 20px;
 }
 
-QMenu::item:selected { /* when user selects item using mouse or keyboard */
+QMenu::item:selected {
     color: rgb(200, 200, 200);
     background-color: rgb(20, 20, 30);
-}
-
-QMenu::item:disabled { /* when user selects item using mouse or keyboard */
-    color: rgb(77, 77, 77);
 }

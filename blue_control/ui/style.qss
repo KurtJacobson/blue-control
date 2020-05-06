@@ -417,25 +417,22 @@ QAbstractItemView::item:selected {
 /*===========================================================================*/
 /*                                 QMenu                                     */
 /*===========================================================================*/
-QMenu {
-  background-color: #21232d;
+QMenu,
+QMenu:disabled {
+  background: fgb(33, 35, 45);
   border: 1px solid #4d4d4d;
-  border-radius: 3px; }
+  border-radius: 4px; }
 
 QMenu::item {
-  /* sets background of item. set to something non-transparent
-       if you want menu color and item color to be different */
-  background-color: transparent;
-  min-height: 50px; }
+  background: #21232d;
+  border-radius: 3px;
+  min-height: 30px;
+  min-width: 150px;
+  padding: 0px 20px 0px 20px; }
 
 QMenu::item:selected {
-  /* when user selects item using mouse or keyboard */
   color: #c8c8c8;
   background-color: #14141e; }
-
-QMenu::item:disabled {
-  /* when user selects item using mouse or keyboard */
-  color: #4d4d4d; }
 
 /*===========================================================================*/
 /*                               QMenuBar                                    */
