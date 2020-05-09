@@ -41,9 +41,7 @@ QPushButton:disabled {
 
 QPushButton:pressed {
   border-color: #004065;
-  border-width: 2px 1px 1px 2px;
-  background-origin: content;
-  padding: 2px 0px 0px 2px; }
+  border-width: 2px 1px 1px 2px; }
 
 /*===========================================================================*/
 /*                             QToolButton                                   */
