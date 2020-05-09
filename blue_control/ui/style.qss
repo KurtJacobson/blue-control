@@ -515,3 +515,29 @@ QSizeGrip {
   min-width: 40px;
   height: 40px;
   width: 40px; }
+
+.ErrorDialog > QPushButton {
+  min-width: 75px; }
+
+.ErrorDialog > QLabel {
+  background: transparent; }
+
+.ErrorDialog > QTextEdit {
+  background: #002f53;
+  border: 1px solid #00507e;
+  border-radius: 3px;
+  font: aaker; }
+
+.ErrorDialog #reportIssue {
+  background: red;
+  border-color: green; }
+
+.ErrorDialog #reportIssue {
+  background: red;
+  border-color: green; }
+
+.ErrorDialog #quitApp {
+  border-color: rgba(255, 0, 0, 50%); }
+
+.ErrorDialog #ignoreException {
+  border-color: rgba(255, 255, 0, 35%); }

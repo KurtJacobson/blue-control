@@ -11,3 +11,37 @@
   height: 40px;
   width: 40px;
 }
+
+
+.ErrorDialog > QPushButton {
+  min-width: 75px;
+}
+
+.ErrorDialog > QLabel {
+  background: transparent;
+}
+
+.ErrorDialog > QTextEdit {
+  background: lighten($background, 3%);
+  border: $border;
+  border-radius: 3px;
+  font: aaker;
+}
+
+.ErrorDialog #reportIssue {
+  background: red;
+  border-color: green;
+}
+
+.ErrorDialog #reportIssue {
+  background: red;
+  border-color: green;
+}
+
+.ErrorDialog #quitApp {
+  border-color: rgba(255, 0, 0, 130);
+}
+
+.ErrorDialog #ignoreException {
+  border-color: rgba(255, 255, 0, 90);
+}
