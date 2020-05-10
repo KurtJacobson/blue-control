@@ -502,8 +502,8 @@
                 </property>
                 <property name="minimumSize">
                  <size>
-                  <width>25</width>
-                  <height>25</height>
+                  <width>52</width>
+                  <height>27</height>
                  </size>
                 </property>
                 <property name="text">
@@ -567,15 +567,25 @@
                   </item>
                   <item>
                    <widget class="DROWidget" name="drowidget">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
                     <property name="maximumSize">
                      <size>
                       <width>16777215</width>
-                      <height>40</height>
+                      <height>30</height>
                      </size>
                     </property>
                     <property name="font">
                      <font>
-                      <pointsize>20</pointsize>
+                      <family>Sans</family>
+                      <pointsize>18</pointsize>
+                      <weight>50</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
                      </font>
                     </property>
                     <property name="styleSheet">
@@ -615,7 +625,10 @@
                     </property>
                     <property name="font">
                      <font>
-                      <pointsize>10</pointsize>
+                      <family>Sans</family>
+                      <weight>50</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
                      </font>
                     </property>
                     <property name="alignment">
@@ -642,7 +655,10 @@
                     </property>
                     <property name="font">
                      <font>
-                      <pointsize>10</pointsize>
+                      <family>Sans</family>
+                      <weight>50</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
                      </font>
                     </property>
                     <property name="alignment">
@@ -704,8 +720,8 @@
                 </property>
                 <property name="minimumSize">
                  <size>
-                  <width>25</width>
-                  <height>25</height>
+                  <width>52</width>
+                  <height>27</height>
                  </size>
                 </property>
                 <property name="text">
@@ -761,15 +777,25 @@
                   </item>
                   <item>
                    <widget class="DROWidget" name="drowidget_4">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
                     <property name="maximumSize">
                      <size>
                       <width>16777215</width>
-                      <height>40</height>
+                      <height>30</height>
                      </size>
                     </property>
                     <property name="font">
                      <font>
-                      <pointsize>20</pointsize>
+                      <family>Sans</family>
+                      <pointsize>18</pointsize>
+                      <weight>50</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
                      </font>
                     </property>
                     <property name="styleSheet">
@@ -780,6 +806,9 @@
                     </property>
                     <property name="referenceType" stdset="0">
                      <enum>DROWidget::Relative</enum>
+                    </property>
+                    <property name="axis" stdset="0">
+                     <enum>DROWidget::Y</enum>
                     </property>
                     <property name="metricTemplate" stdset="0">
                      <string>%+10.3f</string>
@@ -809,11 +838,17 @@
                     </property>
                     <property name="font">
                      <font>
-                      <pointsize>10</pointsize>
+                      <family>Sans</family>
+                      <weight>50</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
                      </font>
                     </property>
                     <property name="alignment">
                      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                    </property>
+                    <property name="axis" stdset="0">
+                     <enum>DROWidget::Y</enum>
                     </property>
                     <property name="metricTemplate" stdset="0">
                      <string>ABS%10.3f</string>
@@ -836,7 +871,10 @@
                     </property>
                     <property name="font">
                      <font>
-                      <pointsize>10</pointsize>
+                      <family>Sans</family>
+                      <weight>50</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
                      </font>
                     </property>
                     <property name="alignment">
@@ -844,6 +882,9 @@
                     </property>
                     <property name="referenceType" stdset="0">
                      <enum>DROWidget::DistanceToGo</enum>
+                    </property>
+                    <property name="axis" stdset="0">
+                     <enum>DROWidget::Y</enum>
                     </property>
                     <property name="metricTemplate" stdset="0">
                      <string>DTG%10.3f</string>
@@ -898,8 +939,8 @@
                 </property>
                 <property name="minimumSize">
                  <size>
-                  <width>25</width>
-                  <height>25</height>
+                  <width>52</width>
+                  <height>27</height>
                  </size>
                 </property>
                 <property name="text">
@@ -955,15 +996,25 @@
                   </item>
                   <item>
                    <widget class="DROWidget" name="drowidget_7">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
                     <property name="maximumSize">
                      <size>
                       <width>16777215</width>
-                      <height>40</height>
+                      <height>30</height>
                      </size>
                     </property>
                     <property name="font">
                      <font>
-                      <pointsize>20</pointsize>
+                      <family>Sans</family>
+                      <pointsize>18</pointsize>
+                      <weight>50</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
                      </font>
                     </property>
                     <property name="styleSheet">
@@ -974,6 +1025,9 @@
                     </property>
                     <property name="referenceType" stdset="0">
                      <enum>DROWidget::Relative</enum>
+                    </property>
+                    <property name="axis" stdset="0">
+                     <enum>DROWidget::Z</enum>
                     </property>
                     <property name="metricTemplate" stdset="0">
                      <string>%+10.3f</string>
@@ -1003,11 +1057,17 @@
                     </property>
                     <property name="font">
                      <font>
-                      <pointsize>10</pointsize>
+                      <family>Sans</family>
+                      <weight>50</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
                      </font>
                     </property>
                     <property name="alignment">
                      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                    </property>
+                    <property name="axis" stdset="0">
+                     <enum>DROWidget::Z</enum>
                     </property>
                     <property name="metricTemplate" stdset="0">
                      <string>ABS%10.3f</string>
@@ -1030,7 +1090,10 @@
                     </property>
                     <property name="font">
                      <font>
-                      <pointsize>10</pointsize>
+                      <family>Sans</family>
+                      <weight>50</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
                      </font>
                     </property>
                     <property name="alignment">
@@ -1038,6 +1101,9 @@
                     </property>
                     <property name="referenceType" stdset="0">
                      <enum>DROWidget::DistanceToGo</enum>
+                    </property>
+                    <property name="axis" stdset="0">
+                     <enum>DROWidget::Z</enum>
                     </property>
                     <property name="metricTemplate" stdset="0">
                      <string>DTG%10.3f</string>
@@ -1092,8 +1158,8 @@
                 </property>
                 <property name="minimumSize">
                  <size>
-                  <width>25</width>
-                  <height>25</height>
+                  <width>52</width>
+                  <height>27</height>
                  </size>
                 </property>
                 <property name="text">
@@ -1151,15 +1217,25 @@
                   </item>
                   <item>
                    <widget class="DROWidget" name="drowidget_10">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
                     <property name="maximumSize">
                      <size>
                       <width>16777215</width>
-                      <height>40</height>
+                      <height>30</height>
                      </size>
                     </property>
                     <property name="font">
                      <font>
-                      <pointsize>20</pointsize>
+                      <family>Sans</family>
+                      <pointsize>18</pointsize>
+                      <weight>50</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
                      </font>
                     </property>
                     <property name="styleSheet">
@@ -1170,6 +1246,9 @@
                     </property>
                     <property name="referenceType" stdset="0">
                      <enum>DROWidget::Relative</enum>
+                    </property>
+                    <property name="axis" stdset="0">
+                     <enum>DROWidget::A</enum>
                     </property>
                     <property name="metricTemplate" stdset="0">
                      <string>%+10.3f</string>
@@ -1199,11 +1278,17 @@
                     </property>
                     <property name="font">
                      <font>
-                      <pointsize>10</pointsize>
+                      <family>Sans</family>
+                      <weight>50</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
                      </font>
                     </property>
                     <property name="alignment">
                      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                    </property>
+                    <property name="axis" stdset="0">
+                     <enum>DROWidget::A</enum>
                     </property>
                     <property name="metricTemplate" stdset="0">
                      <string>ABS%10.3f</string>
@@ -1226,7 +1311,10 @@
                     </property>
                     <property name="font">
                      <font>
-                      <pointsize>10</pointsize>
+                      <family>Sans</family>
+                      <weight>50</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
                      </font>
                     </property>
                     <property name="alignment">
@@ -1234,6 +1322,9 @@
                     </property>
                     <property name="referenceType" stdset="0">
                      <enum>DROWidget::DistanceToGo</enum>
+                    </property>
+                    <property name="axis" stdset="0">
+                     <enum>DROWidget::A</enum>
                     </property>
                     <property name="metricTemplate" stdset="0">
                      <string>DTG%10.3f</string>
