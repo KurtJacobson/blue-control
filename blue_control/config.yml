@@ -26,6 +26,9 @@ data_plugins:
     kwargs:
       cycle_time: 75
 
+  clock:
+    provider: qtpyvcp.plugins.clock:Clock
+
 windows:
 
   mainwindow:
@@ -38,7 +41,7 @@ windows:
       # Specify the mainwindow menubar as the default.
       menu: ( default_menubar )
       # Specify the UI file to load the window layout from.
-      ui_file: {{ file.dir }}/ui/mainwindow.ui
+      ui_file: {{ file.dir }}/ui/blue_control.ui
       # Specify a stylesheet to use only for mainwindow.
       stylesheet: null
       # Set the window title from from the date in the vcp section above.
