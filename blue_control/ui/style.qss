@@ -410,6 +410,23 @@ QTabWidget[tabPosition="3"]::pane {
   border-top-right-radius: 0px; }
 
 /*===========================================================================*/
+/*                                QFrame                                     */
+/*===========================================================================*/
+.QFrame {
+  border: 1px solid #00507e;
+  border-radius: 3px; }
+
+QFrame[frameShape="4"] {
+  border: none;
+  border-top: 1px solid #00345e;
+  max-height: 1px; }
+
+QFrame[frameShape="5"] {
+  border: none;
+  border-left: 1px solid #00345e;
+  max-width: 1px; }
+
+/*===========================================================================*/
 /*                         QAbstractItemView                                 */
 /*===========================================================================*/
 QAbstractItemView {
