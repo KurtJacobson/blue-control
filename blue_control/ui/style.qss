@@ -43,6 +43,22 @@ QPushButton:pressed {
   border-color: #004065;
   border-width: 2px 1px 1px 2px; }
 
+QPushButton:flat {
+  color: #727271;
+  background: transparent;
+  border: none;
+  border-radius: 3px;
+  min-height: 25px;
+  min-width: 25px; }
+
+QPushButton:flat:hover {
+  border: 1px solid #00507e;
+  background: #003158; }
+
+QPushButton:flat:pressed {
+  border: 1px solid #00507e;
+  border-color: #004065; }
+
 /*===========================================================================*/
 /*                             QToolButton                                   */
 /*===========================================================================*/
