@@ -1,7 +1,12 @@
 
 import os
 from qtpy import uic
-from qtpy.QtWidgets import QDialog, QComboBox, QFormLayout, QApplication
+from qtpy.QtCore import Slot
+from qtpy.QtWidgets import QDialog, QDialogButtonBox, QApplication
+
+from qtpy.QtDesigner import QDesignerFormWindowInterface
+
+
 from qtpyvcp.widgets.qtdesigner import _PluginExtension
 
 UI_FILE = os.path.join(os.path.dirname(__file__), "dro_editor.ui")
@@ -27,3 +32,28 @@ class DroEditor(QDialog):
         self.app = QApplication.instance()
 
         uic.loadUi(UI_FILE, self)
+
+        self.axisCombo.setCurrentIndex(self.widget.axisNumber)
+        self.refTypCombo.setCurrentIndex(self.widget.referenceType)
+        self.inFmtEntry.setText(self.widget.inchFormat)
+        self.mmFmtEntry.setText(self.widget.metricFormat)
+
+        bb = self.buttonBox
+        bb.button(QDialogButtonBox.Apply).setDefault(True)
+        bb.button(QDialogButtonBox.Cancel).setDefault(False)
+        bb.button(QDialogButtonBox.Apply).clicked.connect(self.accept)
+
+    @Slot()
+    def accept(self):
+        """Commit changes"""
+        self.setProperty('axisNumber', self.axisCombo.currentIndex())
+        self.setProperty('referenceType', self.refTypCombo.currentIndex())
+        self.setProperty('inchFormat', self.inFmtEntry.text())
+        self.setProperty('metricFormat', self.mmFmtEntry.text())
+
+        self.close()
+
+    def setProperty(self, prop_name, value):
+        form = QDesignerFormWindowInterface.findFormWindow(self.widget)
+        if form:
+            form.cursor().setProperty(prop_name, value)
