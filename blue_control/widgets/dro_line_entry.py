@@ -41,6 +41,10 @@ class RefType(object):
 
 
 class DROEntry(QLineEdit, CMDWidget):
+    """DROEntry
+
+    DRO that supports typing in desired position to set work coordinate offset.
+    """
 
     def __init__(self, parent=None):
         super(DROEntry, self).__init__(parent)
@@ -135,3 +139,7 @@ class DROEntry(QLineEdit, CMDWidget):
     def metricFormat(self, metric_format):
         self._mm_fmt = metric_format
         self.updateUnits()
+
+    @Property(str)
+    def inputType(self):
+        return 'int'
