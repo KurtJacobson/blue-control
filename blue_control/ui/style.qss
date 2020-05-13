@@ -575,3 +575,7 @@ QSizeGrip {
 
 .ErrorDialog #ignoreException {
   border-color: rgba(255, 255, 0, 35%); }
+
+.DROEntry:disabled {
+  border-color: transparent;
+  background: transparent; }
