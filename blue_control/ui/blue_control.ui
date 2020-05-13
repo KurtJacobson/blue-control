@@ -610,10 +610,10 @@
                      <number>0</number>
                     </property>
                     <property name="inchFormat" stdset="0">
-                     <string>%+.4fin</string>
+                     <string>%+.4f</string>
                     </property>
                     <property name="metricFormat" stdset="0">
-                     <string>%+.3fmm</string>
+                     <string>%+.3f</string>
                     </property>
                    </widget>
                   </item>
@@ -811,10 +811,10 @@
                      <number>1</number>
                     </property>
                     <property name="inchFormat" stdset="0">
-                     <string>%+.4fin</string>
+                     <string>%+.4f</string>
                     </property>
                     <property name="metricFormat" stdset="0">
-                     <string>%+.3fmm</string>
+                     <string>%+.3f</string>
                     </property>
                    </widget>
                   </item>
@@ -1018,10 +1018,10 @@
                      <number>2</number>
                     </property>
                     <property name="inchFormat" stdset="0">
-                     <string>%+.4fin</string>
+                     <string>%+.4f</string>
                     </property>
                     <property name="metricFormat" stdset="0">
-                     <string>%+.3fmm</string>
+                     <string>%+.3f</string>
                     </property>
                    </widget>
                   </item>
@@ -1227,10 +1227,10 @@
                      <number>3</number>
                     </property>
                     <property name="inchFormat" stdset="0">
-                     <string>%+.4fin</string>
+                     <string>%+.4f</string>
                     </property>
                     <property name="metricFormat" stdset="0">
-                     <string>%+.3fmm</string>
+                     <string>%+.3f</string>
                     </property>
                    </widget>
                   </item>
