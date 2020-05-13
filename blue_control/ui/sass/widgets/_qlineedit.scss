@@ -9,3 +9,7 @@ QLineEdit {
     border-radius: $border-radius;
     min-height: 25px;
 }
+
+QLineEdit:focus {
+    border-color: lighten($border-color, 10%);
+}
