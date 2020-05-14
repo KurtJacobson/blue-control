@@ -19,6 +19,8 @@
 *_ui.py
 
 # update INI backups
-sim/*.old
+linuxcnc/configs/**/*.old
 
-linuxcnc/configs/sim.blue-control/.*.json
+# persistent data files
+linuxcnc/configs/**/.*.json
+linuxcnc/configs/**/.*.pickle
