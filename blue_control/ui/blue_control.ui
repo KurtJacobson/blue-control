@@ -622,65 +622,34 @@
                 <item>
                  <layout class="QHBoxLayout" name="horizontalLayout_3">
                   <item>
-                   <widget class="DROWidget" name="drowidget_3">
-                    <property name="sizePolicy">
-                     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                      <horstretch>0</horstretch>
-                      <verstretch>0</verstretch>
-                     </sizepolicy>
+                   <widget class="DROLabel" name="drolabel">
+                    <property name="referenceType" stdset="0">
+                     <number>0</number>
                     </property>
-                    <property name="maximumSize">
-                     <size>
-                      <width>16777215</width>
-                      <height>18</height>
-                     </size>
+                    <property name="axisNumber" stdset="0">
+                     <number>0</number>
                     </property>
-                    <property name="font">
-                     <font>
-                      <family>Sans</family>
-                      <weight>50</weight>
-                      <italic>false</italic>
-                      <bold>false</bold>
-                     </font>
+                    <property name="inchFormat" stdset="0">
+                     <string>ABS %9.4f</string>
                     </property>
-                    <property name="alignment">
-                     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-                    </property>
-                    <property name="metricTemplate" stdset="0">
-                     <string>ABS%10.3f</string>
+                    <property name="metricFormat" stdset="0">
+                     <string>ABS %10.3f</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="DROWidget" name="drowidget_2">
-                    <property name="sizePolicy">
-                     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                      <horstretch>0</horstretch>
-                      <verstretch>0</verstretch>
-                     </sizepolicy>
-                    </property>
-                    <property name="maximumSize">
-                     <size>
-                      <width>16777215</width>
-                      <height>18</height>
-                     </size>
-                    </property>
-                    <property name="font">
-                     <font>
-                      <family>Sans</family>
-                      <weight>50</weight>
-                      <italic>false</italic>
-                      <bold>false</bold>
-                     </font>
-                    </property>
-                    <property name="alignment">
-                     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-                    </property>
+                   <widget class="DROLabel" name="drolabel_2">
                     <property name="referenceType" stdset="0">
-                     <enum>DROWidget::DistanceToGo</enum>
+                     <number>2</number>
                     </property>
-                    <property name="metricTemplate" stdset="0">
-                     <string>DTG%10.3f</string>
+                    <property name="axisNumber" stdset="0">
+                     <number>0</number>
+                    </property>
+                    <property name="inchFormat" stdset="0">
+                     <string>DTG %9.4f</string>
+                    </property>
+                    <property name="metricFormat" stdset="0">
+                     <string>DTG %10.3f</string>
                     </property>
                    </widget>
                   </item>
@@ -823,71 +792,34 @@
                 <item>
                  <layout class="QHBoxLayout" name="horizontalLayout_7">
                   <item>
-                   <widget class="DROWidget" name="drowidget_5">
-                    <property name="sizePolicy">
-                     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                      <horstretch>0</horstretch>
-                      <verstretch>0</verstretch>
-                     </sizepolicy>
+                   <widget class="DROLabel" name="drolabel_3">
+                    <property name="referenceType" stdset="0">
+                     <number>0</number>
                     </property>
-                    <property name="maximumSize">
-                     <size>
-                      <width>16777215</width>
-                      <height>18</height>
-                     </size>
+                    <property name="axisNumber" stdset="0">
+                     <number>1</number>
                     </property>
-                    <property name="font">
-                     <font>
-                      <family>Sans</family>
-                      <weight>50</weight>
-                      <italic>false</italic>
-                      <bold>false</bold>
-                     </font>
+                    <property name="inchFormat" stdset="0">
+                     <string>ABS %9.4f</string>
                     </property>
-                    <property name="alignment">
-                     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-                    </property>
-                    <property name="axis" stdset="0">
-                     <enum>DROWidget::Y</enum>
-                    </property>
-                    <property name="metricTemplate" stdset="0">
-                     <string>ABS%10.3f</string>
+                    <property name="metricFormat" stdset="0">
+                     <string>ABS %10.3f</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="DROWidget" name="drowidget_6">
-                    <property name="sizePolicy">
-                     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                      <horstretch>0</horstretch>
-                      <verstretch>0</verstretch>
-                     </sizepolicy>
-                    </property>
-                    <property name="maximumSize">
-                     <size>
-                      <width>16777215</width>
-                      <height>18</height>
-                     </size>
-                    </property>
-                    <property name="font">
-                     <font>
-                      <family>Sans</family>
-                      <weight>50</weight>
-                      <italic>false</italic>
-                      <bold>false</bold>
-                     </font>
-                    </property>
-                    <property name="alignment">
-                     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-                    </property>
+                   <widget class="DROLabel" name="drolabel_4">
                     <property name="referenceType" stdset="0">
-                     <enum>DROWidget::DistanceToGo</enum>
+                     <number>2</number>
                     </property>
-                    <property name="axis" stdset="0">
-                     <enum>DROWidget::Y</enum>
+                    <property name="axisNumber" stdset="0">
+                     <number>1</number>
                     </property>
-                    <property name="metricTemplate" stdset="0">
-                     <string>DTG%10.3f</string>
+                    <property name="inchFormat" stdset="0">
+                     <string>DTG %9.4f</string>
+                    </property>
+                    <property name="metricFormat" stdset="0">
+                     <string>DTG %10.3f</string>
                     </property>
                    </widget>
                   </item>
@@ -1030,71 +962,34 @@
                 <item>
                  <layout class="QHBoxLayout" name="horizontalLayout_10">
                   <item>
-                   <widget class="DROWidget" name="drowidget_8">
-                    <property name="sizePolicy">
-                     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                      <horstretch>0</horstretch>
-                      <verstretch>0</verstretch>
-                     </sizepolicy>
+                   <widget class="DROLabel" name="drolabel_5">
+                    <property name="referenceType" stdset="0">
+                     <number>0</number>
                     </property>
-                    <property name="maximumSize">
-                     <size>
-                      <width>16777215</width>
-                      <height>18</height>
-                     </size>
+                    <property name="axisNumber" stdset="0">
+                     <number>2</number>
                     </property>
-                    <property name="font">
-                     <font>
-                      <family>Sans</family>
-                      <weight>50</weight>
-                      <italic>false</italic>
-                      <bold>false</bold>
-                     </font>
+                    <property name="inchFormat" stdset="0">
+                     <string>ABS %9.4f</string>
                     </property>
-                    <property name="alignment">
-                     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-                    </property>
-                    <property name="axis" stdset="0">
-                     <enum>DROWidget::Z</enum>
-                    </property>
-                    <property name="metricTemplate" stdset="0">
-                     <string>ABS%10.3f</string>
+                    <property name="metricFormat" stdset="0">
+                     <string>ABS %10.3f</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="DROWidget" name="drowidget_9">
-                    <property name="sizePolicy">
-                     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                      <horstretch>0</horstretch>
-                      <verstretch>0</verstretch>
-                     </sizepolicy>
-                    </property>
-                    <property name="maximumSize">
-                     <size>
-                      <width>16777215</width>
-                      <height>18</height>
-                     </size>
-                    </property>
-                    <property name="font">
-                     <font>
-                      <family>Sans</family>
-                      <weight>50</weight>
-                      <italic>false</italic>
-                      <bold>false</bold>
-                     </font>
-                    </property>
-                    <property name="alignment">
-                     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-                    </property>
+                   <widget class="DROLabel" name="drolabel_6">
                     <property name="referenceType" stdset="0">
-                     <enum>DROWidget::DistanceToGo</enum>
+                     <number>2</number>
                     </property>
-                    <property name="axis" stdset="0">
-                     <enum>DROWidget::Z</enum>
+                    <property name="axisNumber" stdset="0">
+                     <number>2</number>
                     </property>
-                    <property name="metricTemplate" stdset="0">
-                     <string>DTG%10.3f</string>
+                    <property name="inchFormat" stdset="0">
+                     <string>DTG %9.4f</string>
+                    </property>
+                    <property name="metricFormat" stdset="0">
+                     <string>DTG %10.3f</string>
                     </property>
                    </widget>
                   </item>
@@ -1239,71 +1134,34 @@
                 <item>
                  <layout class="QHBoxLayout" name="horizontalLayout_13">
                   <item>
-                   <widget class="DROWidget" name="drowidget_11">
-                    <property name="sizePolicy">
-                     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                      <horstretch>0</horstretch>
-                      <verstretch>0</verstretch>
-                     </sizepolicy>
+                   <widget class="DROLabel" name="drolabel_8">
+                    <property name="referenceType" stdset="0">
+                     <number>0</number>
                     </property>
-                    <property name="maximumSize">
-                     <size>
-                      <width>16777215</width>
-                      <height>18</height>
-                     </size>
+                    <property name="axisNumber" stdset="0">
+                     <number>3</number>
                     </property>
-                    <property name="font">
-                     <font>
-                      <family>Sans</family>
-                      <weight>50</weight>
-                      <italic>false</italic>
-                      <bold>false</bold>
-                     </font>
+                    <property name="inchFormat" stdset="0">
+                     <string>ABS %9.4f</string>
                     </property>
-                    <property name="alignment">
-                     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-                    </property>
-                    <property name="axis" stdset="0">
-                     <enum>DROWidget::A</enum>
-                    </property>
-                    <property name="metricTemplate" stdset="0">
-                     <string>ABS%10.3f</string>
+                    <property name="metricFormat" stdset="0">
+                     <string>ABS %10.3f</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="DROWidget" name="drowidget_12">
-                    <property name="sizePolicy">
-                     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                      <horstretch>0</horstretch>
-                      <verstretch>0</verstretch>
-                     </sizepolicy>
-                    </property>
-                    <property name="maximumSize">
-                     <size>
-                      <width>16777215</width>
-                      <height>18</height>
-                     </size>
-                    </property>
-                    <property name="font">
-                     <font>
-                      <family>Sans</family>
-                      <weight>50</weight>
-                      <italic>false</italic>
-                      <bold>false</bold>
-                     </font>
-                    </property>
-                    <property name="alignment">
-                     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-                    </property>
+                   <widget class="DROLabel" name="drolabel_7">
                     <property name="referenceType" stdset="0">
-                     <enum>DROWidget::DistanceToGo</enum>
+                     <number>2</number>
                     </property>
-                    <property name="axis" stdset="0">
-                     <enum>DROWidget::A</enum>
+                    <property name="axisNumber" stdset="0">
+                     <number>3</number>
                     </property>
-                    <property name="metricTemplate" stdset="0">
-                     <string>DTG%10.3f</string>
+                    <property name="inchFormat" stdset="0">
+                     <string>DTG %9.4f</string>
+                    </property>
+                    <property name="metricFormat" stdset="0">
+                     <string>DTG %10.3f</string>
                     </property>
                    </widget>
                   </item>
@@ -1358,12 +1216,7 @@
   <customwidget>
    <class>DROEntry</class>
    <extends>QLineEdit</extends>
-   <header>blue_control.widgets.dro_line_entry</header>
-  </customwidget>
-  <customwidget>
-   <class>DROWidget</class>
-   <extends>QLabel</extends>
-   <header>qtpyvcp.widgets.display_widgets.dro_widget</header>
+   <header>blue_control.widgets.dro_widgets</header>
   </customwidget>
   <customwidget>
    <class>RecentFileComboBox</class>
@@ -1385,6 +1238,11 @@
    <class>VTKBackPlot</class>
    <extends>QWidget</extends>
    <header>qtpyvcp.widgets.display_widgets.vtk_backplot.vtk_backplot</header>
+  </customwidget>
+  <customwidget>
+   <class>DROLabel</class>
+   <extends>QLabel</extends>
+   <header>blue_control.widgets.dro_widgets</header>
   </customwidget>
   <customwidget>
    <class>ActionButton</class>
