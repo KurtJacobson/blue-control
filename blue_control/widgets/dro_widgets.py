@@ -1,12 +1,12 @@
-"""DRO Line Entry"""
+"""DRO Entry widget"""
 import os
 import linuxcnc
 
-from qtpy.QtWidgets import QLineEdit
+from qtpy.QtWidgets import QLabel, QLineEdit
 from qtpy.QtCore import Slot, Property
 
 from qtpyvcp.plugins import getPlugin
-from qtpyvcp.widgets import CMDWidget
+from qtpyvcp.widgets import VCPWidget
 from qtpyvcp.utilities import logger
 from qtpyvcp.actions.machine_actions import issue_mdi
 
@@ -40,17 +40,15 @@ class RefType(object):
         return ['abs', 'rel', 'dtg'][ref_type]
 
 
-class DROEntry(QLineEdit, CMDWidget):
-    """DROEntry
-
-    DRO that supports typing in desired position to set work coordinate offset.
+class DROBaseWidget(VCPWidget):
+    """DROLabel
     """
 
-    def __init__(self, parent=None):
-        super(DROEntry, self).__init__(parent)
+    def __init__(self):
+        super(DROBaseWidget, self).__init__()
 
-        self._anum = 0
-        self._ref_typ = 0
+        self._anum = Axis.X
+        self._ref_typ = RefType.Relative
         self._mm_fmt = '%10.3f'
         self._in_fmt = '%9.4f'
 
@@ -58,10 +56,6 @@ class DROEntry(QLineEdit, CMDWidget):
 
         self.updateValue()
 
-        self.returnPressed.connect(self.onReturnPressed)
-        self.editingFinished.connect(self.onEditingFinished)
-
-        issue_mdi.bindOk(widget=self)
         STATUS.program_units.notify(self.updateUnits, 'string')
 
     def updateUnits(self, units=None):
@@ -74,24 +68,6 @@ class DROEntry(QLineEdit, CMDWidget):
             self._fmt = self._mm_fmt
 
         # force update
-        self.updateValue()
-
-    def onReturnPressed(self):
-        try:
-            val = float(self.text().strip().replace('mm', '').replace('in', ''))
-            g5x_index = STATUS.stat.g5x_index
-            axis = 'XYZABCUVW'[self._anum]
-
-            cmd = 'G10 L20 P{0:d} {1}{2:.12f}'.format(g5x_index, axis, val)
-            issue_mdi(cmd)
-        except Exception:
-            LOG.exception("Error setting work coordinate offset.")
-
-        self.blockSignals(True)
-        self.clearFocus()
-        self.blockSignals(False)
-
-    def onEditingFinished(self):
         self.updateValue()
 
     def initialize(self):
@@ -139,6 +115,47 @@ class DROEntry(QLineEdit, CMDWidget):
     def metricFormat(self, metric_format):
         self._mm_fmt = metric_format
         self.updateUnits()
+
+
+class DROLabel(QLabel, DROBaseWidget):
+    """DROLabel
+    """
+
+    def __init__(self, parent=None):
+        super(DROLabel, self).__init__(parent)
+
+
+class DROEntry(QLineEdit, DROBaseWidget):
+    """DROEntry
+
+    DRO that supports typing in desired position to set work coordinate offset.
+    """
+
+    def __init__(self, parent=None):
+        super(DROEntry, self).__init__(parent)
+
+        self.returnPressed.connect(self.onReturnPressed)
+        self.editingFinished.connect(self.onEditingFinished)
+
+        issue_mdi.bindOk(widget=self)
+
+    def onReturnPressed(self):
+        try:
+            val = float(self.text().strip().replace('mm', '').replace('in', ''))
+            g5x_index = STATUS.stat.g5x_index
+            axis = 'XYZABCUVW'[self._anum]
+
+            cmd = 'G10 L20 P{0:d} {1}{2:.12f}'.format(g5x_index, axis, val)
+            issue_mdi(cmd)
+        except Exception:
+            LOG.exception("Error setting work coordinate offset.")
+
+        self.blockSignals(True)
+        self.clearFocus()
+        self.blockSignals(False)
+
+    def onEditingFinished(self):
+        self.updateValue()
 
     @Property(str)
     def inputType(self):
