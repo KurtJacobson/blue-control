@@ -25,7 +25,11 @@ QPushButton:disabled {
 QPushButton:pressed {
   border-color: darken($border-color, 5%);
   border-width: 2px 1px 1px 2px;
-  // padding: 2px 0px 0px 2px;
+  padding: 1px 0px 0px 1px;
+}
+
+QPushButton:checked {
+  color: $yellow;
 }
 
 QPushButton:flat {
