@@ -30,7 +30,7 @@
        <enum>QTabWidget::South</enum>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>4</number>
       </property>
       <widget class="QWidget" name="tab">
        <attribute name="title">
@@ -246,10 +246,10 @@
        <widget class="QPushButton" name="pushButton_9">
         <property name="geometry">
          <rect>
-          <x>790</x>
-          <y>80</y>
-          <width>111</width>
-          <height>51</height>
+          <x>550</x>
+          <y>70</y>
+          <width>331</width>
+          <height>61</height>
          </rect>
         </property>
         <property name="text">
@@ -269,7 +269,7 @@
        <widget class="QPushButton" name="pushButton_11">
         <property name="geometry">
          <rect>
-          <x>790</x>
+          <x>550</x>
           <y>200</y>
           <width>131</width>
           <height>41</height>
@@ -292,7 +292,7 @@
        <widget class="QPushButton" name="pushButton_12">
         <property name="geometry">
          <rect>
-          <x>790</x>
+          <x>550</x>
           <y>250</y>
           <width>131</width>
           <height>41</height>
@@ -315,9 +315,9 @@
        <widget class="QPushButton" name="pushButton_8">
         <property name="geometry">
          <rect>
-          <x>790</x>
+          <x>550</x>
           <y>140</y>
-          <width>111</width>
+          <width>331</width>
           <height>51</height>
          </rect>
         </property>
@@ -345,12 +345,21 @@
       </property>
       <widget class="QWidget" name="page">
        <layout class="QHBoxLayout" name="horizontalLayout_18">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
         <item>
-         <widget class="QGroupBox" name="groupBox">
-          <property name="title">
-           <string>Program</string>
+         <widget class="QFrame" name="frame_3">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
           </property>
-          <layout class="QVBoxLayout" name="verticalLayout">
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_11">
            <item>
             <spacer name="verticalSpacer">
              <property name="orientation">
@@ -363,6 +372,66 @@
               </size>
              </property>
             </spacer>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_19">
+             <item>
+              <widget class="ActionButton" name="actionbutton_7">
+               <property name="text">
+                <string>Mist</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="actionName" stdset="0">
+                <string>coolant.mist.toggle</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="ActionButton" name="actionbutton_6">
+               <property name="text">
+                <string>Flood</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="actionName" stdset="0">
+                <string>coolant.flood.toggle</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_20">
+             <item>
+              <widget class="ActionButton" name="actionbutton_8">
+               <property name="text">
+                <string>Block Del</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="actionName" stdset="0">
+                <string>program.block-delete.toggle</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="ActionButton" name="actionbutton_9">
+               <property name="text">
+                <string>Opt Stop</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="actionName" stdset="0">
+                <string>program.optional-stop.toggle</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
            </item>
            <item>
             <widget class="Line" name="line_5">
@@ -477,6 +546,12 @@
            <property name="spacing">
             <number>0</number>
            </property>
+           <property name="topMargin">
+            <number>4</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
            <item>
             <widget class="QWidget" name="widget" native="true">
              <property name="sizePolicy">
@@ -532,14 +607,12 @@
                 </property>
                 <property name="icon">
                  <iconset>
-                  <normaloff>icons/axis-x.png</normaloff>
-                  <normalon>icons/axis-y-disabled.png</normalon>
-                  <disabledoff>icons/axis-x-disabled.png</disabledoff>icons/axis-x.png</iconset>
+                  <normaloff>icons/axis-x.png</normaloff>icons/axis-x.png</iconset>
                 </property>
                 <property name="iconSize">
                  <size>
-                  <width>50</width>
-                  <height>50</height>
+                  <width>48</width>
+                  <height>48</height>
                  </size>
                 </property>
                 <property name="flat">
@@ -580,8 +653,8 @@
                     </property>
                     <property name="iconSize">
                      <size>
-                      <width>24</width>
-                      <height>50</height>
+                      <width>20</width>
+                      <height>20</height>
                      </size>
                     </property>
                     <property name="flat">
@@ -623,6 +696,18 @@
                  <layout class="QHBoxLayout" name="horizontalLayout_3">
                   <item>
                    <widget class="DROLabel" name="drolabel">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>20</height>
+                     </size>
+                    </property>
                     <property name="referenceType" stdset="0">
                      <number>0</number>
                     </property>
@@ -639,6 +724,18 @@
                   </item>
                   <item>
                    <widget class="DROLabel" name="drolabel_2">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>20</height>
+                     </size>
+                    </property>
                     <property name="referenceType" stdset="0">
                      <number>2</number>
                     </property>
@@ -714,8 +811,8 @@
                 </property>
                 <property name="iconSize">
                  <size>
-                  <width>50</width>
-                  <height>50</height>
+                  <width>48</width>
+                  <height>48</height>
                  </size>
                 </property>
                 <property name="flat">
@@ -750,8 +847,8 @@
                     </property>
                     <property name="iconSize">
                      <size>
-                      <width>24</width>
-                      <height>50</height>
+                      <width>20</width>
+                      <height>20</height>
                      </size>
                     </property>
                     <property name="flat">
@@ -793,6 +890,18 @@
                  <layout class="QHBoxLayout" name="horizontalLayout_7">
                   <item>
                    <widget class="DROLabel" name="drolabel_3">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>20</height>
+                     </size>
+                    </property>
                     <property name="referenceType" stdset="0">
                      <number>0</number>
                     </property>
@@ -809,6 +918,18 @@
                   </item>
                   <item>
                    <widget class="DROLabel" name="drolabel_4">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>20</height>
+                     </size>
+                    </property>
                     <property name="referenceType" stdset="0">
                      <number>2</number>
                     </property>
@@ -884,8 +1005,8 @@
                 </property>
                 <property name="iconSize">
                  <size>
-                  <width>50</width>
-                  <height>50</height>
+                  <width>48</width>
+                  <height>48</height>
                  </size>
                 </property>
                 <property name="flat">
@@ -920,8 +1041,8 @@
                     </property>
                     <property name="iconSize">
                      <size>
-                      <width>24</width>
-                      <height>50</height>
+                      <width>20</width>
+                      <height>20</height>
                      </size>
                     </property>
                     <property name="flat">
@@ -963,6 +1084,18 @@
                  <layout class="QHBoxLayout" name="horizontalLayout_10">
                   <item>
                    <widget class="DROLabel" name="drolabel_5">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>20</height>
+                     </size>
+                    </property>
                     <property name="referenceType" stdset="0">
                      <number>0</number>
                     </property>
@@ -979,6 +1112,18 @@
                   </item>
                   <item>
                    <widget class="DROLabel" name="drolabel_6">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>20</height>
+                     </size>
+                    </property>
                     <property name="referenceType" stdset="0">
                      <number>2</number>
                     </property>
@@ -1056,8 +1201,8 @@
                 </property>
                 <property name="iconSize">
                  <size>
-                  <width>50</width>
-                  <height>50</height>
+                  <width>48</width>
+                  <height>48</height>
                  </size>
                 </property>
                 <property name="flat">
@@ -1092,8 +1237,8 @@
                     </property>
                     <property name="iconSize">
                      <size>
-                      <width>24</width>
-                      <height>50</height>
+                      <width>20</width>
+                      <height>20</height>
                      </size>
                     </property>
                     <property name="flat">
@@ -1135,6 +1280,18 @@
                  <layout class="QHBoxLayout" name="horizontalLayout_13">
                   <item>
                    <widget class="DROLabel" name="drolabel_8">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>20</height>
+                     </size>
+                    </property>
                     <property name="referenceType" stdset="0">
                      <number>0</number>
                     </property>
@@ -1151,6 +1308,18 @@
                   </item>
                   <item>
                    <widget class="DROLabel" name="drolabel_7">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>20</height>
+                     </size>
+                    </property>
                     <property name="referenceType" stdset="0">
                      <number>2</number>
                     </property>
