@@ -417,6 +417,7 @@ QTabWidget[tabPosition="3"]::pane {
 /*===========================================================================*/
 .QFrame {
   border: 1px solid #00507e;
+  border-color: #003763;
   border-radius: 3px; }
 
 QFrame[frameShape="4"] {
