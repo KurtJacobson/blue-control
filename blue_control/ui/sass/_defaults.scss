@@ -8,6 +8,7 @@ $font-stack: Noto Sans !default;
 $text-color: rgb(114, 114, 113);
 $background: rgb(00, 38, 68);
 $border-color: rgb(00, 80, 126);
+$layout-border-color: lighten($background, 6%);
 
 // Hover Colors
 $hover-text-color: $text-color;
