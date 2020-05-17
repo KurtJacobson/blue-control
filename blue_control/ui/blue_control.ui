@@ -1365,7 +1365,6 @@
    </layout>
   </widget>
  </widget>
- <layoutdefault spacing="6" margin="9"/>
  <customwidgets>
   <customwidget>
    <class>FileSystemTable</class>
