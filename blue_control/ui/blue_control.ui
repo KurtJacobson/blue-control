@@ -71,6 +71,18 @@
           </property>
           <widget class="QWidget" name="layoutWidget">
            <layout class="QVBoxLayout" name="verticalLayout_7">
+            <property name="leftMargin">
+             <number>4</number>
+            </property>
+            <property name="topMargin">
+             <number>4</number>
+            </property>
+            <property name="rightMargin">
+             <number>4</number>
+            </property>
+            <property name="bottomMargin">
+             <number>4</number>
+            </property>
             <item>
              <widget class="RecentFileComboBox" name="recentfilecombobox"/>
             </item>
@@ -129,6 +141,18 @@
         </property>
         <item>
          <layout class="QVBoxLayout" name="verticalLayout_8">
+          <property name="leftMargin">
+           <number>4</number>
+          </property>
+          <property name="topMargin">
+           <number>4</number>
+          </property>
+          <property name="rightMargin">
+           <number>4</number>
+          </property>
+          <property name="bottomMargin">
+           <number>4</number>
+          </property>
           <item>
            <layout class="QHBoxLayout" name="horizontalLayout_15">
             <item>
@@ -484,6 +508,9 @@
                  <height>36</height>
                 </size>
                </property>
+               <property name="actionName" stdset="0">
+                <string>program.abort</string>
+               </property>
               </widget>
              </item>
              <item>
@@ -513,6 +540,9 @@
                  <height>36</height>
                 </size>
                </property>
+               <property name="actionName" stdset="0">
+                <string>program.pause</string>
+               </property>
               </widget>
              </item>
              <item>
@@ -541,6 +571,9 @@
                  <width>36</width>
                  <height>36</height>
                 </size>
+               </property>
+               <property name="actionName" stdset="0">
+                <string>program.run</string>
                </property>
               </widget>
              </item>
@@ -1458,5 +1491,134 @@
   </customwidget>
  </customwidgets>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>removabledevicecombobox</sender>
+   <signal>currentPathChanged(QString)</signal>
+   <receiver>filesystemtable_2</receiver>
+   <slot>setRootPath(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>49</x>
+     <y>60</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>51</x>
+     <y>111</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>removabledevicecombobox</sender>
+   <signal>currentDeviceEjectable(bool)</signal>
+   <receiver>pushButton_7</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>381</x>
+     <y>46</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>428</x>
+     <y>44</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_7</sender>
+   <signal>clicked()</signal>
+   <receiver>removabledevicecombobox</receiver>
+   <slot>ejectDevice()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>408</x>
+     <y>58</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>342</x>
+     <y>56</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_25</sender>
+   <signal>clicked()</signal>
+   <receiver>filesystemtable_2</receiver>
+   <slot>newFolder()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>57</x>
+     <y>423</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>36</x>
+     <y>355</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_24</sender>
+   <signal>clicked()</signal>
+   <receiver>filesystemtable_2</receiver>
+   <slot>newFile()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>130</x>
+     <y>412</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>137</x>
+     <y>376</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>filesystemtable_2</receiver>
+   <slot>openSelectedItem()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>488</x>
+     <y>113</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>433</x>
+     <y>111</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_22</sender>
+   <signal>clicked()</signal>
+   <receiver>filesystemtable_2</receiver>
+   <slot>viewParentDirectory()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>497</x>
+     <y>284</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>425</x>
+     <y>279</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>filesystemtable_2</sender>
+   <signal>filePreviewText(QString)</signal>
+   <receiver>gcodeeditor_3</receiver>
+   <slot>setText(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>434</x>
+     <y>156</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>634</x>
+     <y>153</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
