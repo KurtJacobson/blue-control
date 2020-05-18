@@ -525,7 +525,8 @@
                </property>
                <property name="icon">
                 <iconset>
-                 <normaloff>icons/stop.png</normaloff>icons/stop.png</iconset>
+                 <normaloff>icons/stop.png</normaloff>
+                 <disabledoff>icons/stop.disabled.png</disabledoff>icons/stop.png</iconset>
                </property>
                <property name="iconSize">
                 <size>
@@ -557,7 +558,8 @@
                </property>
                <property name="icon">
                 <iconset>
-                 <normaloff>icons/pause.png</normaloff>icons/pause.png</iconset>
+                 <normaloff>icons/pause.png</normaloff>
+                 <disabledoff>icons/pause.disabled.png</disabledoff>icons/pause.png</iconset>
                </property>
                <property name="iconSize">
                 <size>
@@ -589,7 +591,8 @@
                </property>
                <property name="icon">
                 <iconset>
-                 <normaloff>icons/start.png</normaloff>icons/start.png</iconset>
+                 <normaloff>icons/start.png</normaloff>
+                 <disabledoff>icons/start.disabled.png</disabledoff>icons/start.png</iconset>
                </property>
                <property name="iconSize">
                 <size>
