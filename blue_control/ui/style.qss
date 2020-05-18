@@ -47,6 +47,9 @@ QPushButton:pressed {
 QPushButton:checked {
   color: #fecc00; }
 
+QPushButton:checked:disabled {
+  color: rgba(254, 204, 0, 39%); }
+
 QPushButton:flat {
   color: #727271;
   background: transparent;

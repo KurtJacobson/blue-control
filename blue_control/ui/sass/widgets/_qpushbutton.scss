@@ -32,6 +32,10 @@ QPushButton:checked {
   color: $yellow;
 }
 
+QPushButton:checked:disabled {
+  color: rgba(254, 204, 0, 100);
+}
+
 QPushButton:flat {
   color: $text-color;
   background: transparent;
