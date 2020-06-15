@@ -23,7 +23,7 @@
    <string>Form</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QVBoxLayout" name="verticalLayout_9" stretch="6,4">
+   <layout class="QVBoxLayout" name="verticalLayout_9" stretch="0,0">
     <property name="spacing">
      <number>5</number>
     </property>
@@ -45,7 +45,7 @@
        <enum>QTabWidget::South</enum>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>3</number>
       </property>
       <widget class="QWidget" name="tab">
        <attribute name="title">
@@ -117,6 +117,29 @@
        <attribute name="title">
         <string>Startup</string>
        </attribute>
+       <widget class="MDIHistory" name="mdihistory">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>321</width>
+          <height>311</height>
+         </rect>
+        </property>
+        <property name="mdi_entryline_name" stdset="0">
+         <string>mdientry_2</string>
+        </property>
+       </widget>
+       <widget class="MDIEntry" name="mdientry_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>330</y>
+          <width>321</width>
+          <height>31</height>
+         </rect>
+        </property>
+       </widget>
       </widget>
       <widget class="QWidget" name="tab_2">
        <attribute name="icon">
@@ -301,6 +324,149 @@
           </widget>
          </item>
         </layout>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>251</width>
+          <height>201</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>DRO Display</string>
+        </property>
+        <layout class="QFormLayout" name="formLayout">
+         <property name="labelAlignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+         <property name="horizontalSpacing">
+          <number>6</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>&amp;Inch Format</string>
+           </property>
+           <property name="buddy">
+            <cstring>settings_lineedit</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="VCPSettingsLineEdit" name="settings_lineedit">
+           <property name="settingName" stdset="0">
+            <string>dro.inch-format</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>Millimeter Format</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="VCPSettingsLineEdit" name="settings_lineedit_2">
+           <property name="settingName" stdset="0">
+            <string>dro.millimeter-format</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string>Degree Format</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="VCPSettingsLineEdit" name="settings_lineedit_3">
+           <property name="settingName" stdset="0">
+            <string>dro.degree-format</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_4">
+           <property name="text">
+            <string>Display Units</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QComboBox" name="comboBox">
+           <item>
+            <property name="text">
+             <string>Program</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>mm</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>cm</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>in</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>630</x>
+          <y>40</y>
+          <width>331</width>
+          <height>239</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_12">
+         <item>
+          <widget class="CompositeDroWidget" name="compositedrowidget">
+           <property name="axisNumber" stdset="0">
+            <number>0</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="CompositeDroWidget" name="compositedrowidget_2">
+           <property name="axisNumber" stdset="0">
+            <number>1</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="CompositeDroWidget" name="compositedrowidget_3">
+           <property name="axisNumber" stdset="0">
+            <number>2</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="StatusLabel" name="statuslabel">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>90</y>
+          <width>111</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="rules" stdset="0">
+         <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axis_mask?str&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;New Rule&quot;}]</string>
+        </property>
        </widget>
       </widget>
       <widget class="QWidget" name="tab_5">
@@ -745,7 +911,7 @@
                    </widget>
                   </item>
                   <item>
-                   <widget class="DROEntry" name="droentry">
+                   <widget class="DROLineEdit" name="droentry">
                     <property name="font">
                      <font>
                       <family>Sans</family>
@@ -764,18 +930,44 @@
                     <property name="axisNumber" stdset="0">
                      <number>0</number>
                     </property>
-                    <property name="inchFormat" stdset="0">
-                     <string>%+.4f</string>
-                    </property>
-                    <property name="metricFormat" stdset="0">
-                     <string>%+.3f</string>
-                    </property>
                    </widget>
                   </item>
                  </layout>
                 </item>
                 <item>
                  <layout class="QHBoxLayout" name="horizontalLayout_3">
+                  <property name="spacing">
+                   <number>0</number>
+                  </property>
+                  <item>
+                   <spacer name="horizontalSpacer_2">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>40</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_5">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="text">
+                     <string>ABS</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                    </property>
+                   </widget>
+                  </item>
                   <item>
                    <widget class="DROLabel" name="drolabel">
                     <property name="sizePolicy">
@@ -797,10 +989,29 @@
                      <number>0</number>
                     </property>
                     <property name="inchFormat" stdset="0">
-                     <string>ABS %9.4f</string>
+                     <string>%9.4f</string>
+                    </property>
+                    <property name="millimeterFormat" stdset="0">
+                     <string>%10.3f</string>
                     </property>
                     <property name="metricFormat" stdset="0">
                      <string>ABS %10.3f</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_6">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="text">
+                     <string>DTG</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
                     </property>
                    </widget>
                   </item>
@@ -825,7 +1036,10 @@
                      <number>0</number>
                     </property>
                     <property name="inchFormat" stdset="0">
-                     <string>DTG %9.4f</string>
+                     <string>%9.4f</string>
+                    </property>
+                    <property name="millimeterFormat" stdset="0">
+                     <string>%10.3f</string>
                     </property>
                     <property name="metricFormat" stdset="0">
                      <string>DTG %10.3f</string>
@@ -945,7 +1159,7 @@
                    </widget>
                   </item>
                   <item>
-                   <widget class="DROEntry" name="droentry_2">
+                   <widget class="DROLineEdit" name="droentry_2">
                     <property name="font">
                      <font>
                       <family>Sans</family>
@@ -1145,7 +1359,7 @@
                    </widget>
                   </item>
                   <item>
-                   <widget class="DROEntry" name="droentry_3">
+                   <widget class="DROLineEdit" name="droentry_3">
                     <property name="font">
                      <font>
                       <family>Sans</family>
@@ -1347,7 +1561,7 @@
                    </widget>
                   </item>
                   <item>
-                   <widget class="DROEntry" name="droentry_4">
+                   <widget class="DROLineEdit" name="droentry_4">
                     <property name="font">
                      <font>
                       <family>Sans</family>
@@ -1445,17 +1659,117 @@
          </widget>
         </item>
         <item>
-         <spacer name="horizontalSpacer">
-          <property name="orientation">
-           <enum>Qt::Horizontal</enum>
+         <widget class="QFrame" name="frame_4">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
           </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>475</width>
-            <height>20</height>
-           </size>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
           </property>
-         </spacer>
+          <layout class="QVBoxLayout" name="verticalLayout_13">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>8</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>8</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="CompositeDroGroup" name="compositedrogroup_2"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame_5">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_15">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_14">
+             <item>
+              <widget class="QCheckBox" name="checkBox_2">
+               <property name="text">
+                <string>Auto</string>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="checkBox_3">
+               <property name="text">
+                <string>Radius</string>
+               </property>
+               <property name="autoExclusive">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="checkBox_4">
+               <property name="text">
+                <string>Diameter</string>
+               </property>
+               <property name="autoExclusive">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="DROLineEdit" name="droentry_5">
+             <property name="font">
+              <font>
+               <family>Sans</family>
+               <pointsize>18</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="referenceType" stdset="0">
+              <number>1</number>
+             </property>
+             <property name="axisNumber" stdset="0">
+              <number>0</number>
+             </property>
+             <property name="inchFormat" stdset="0">
+              <string>%9.4f</string>
+             </property>
+             <property name="millimeterFormat" stdset="0">
+              <string>%10.3f</string>
+             </property>
+             <property name="degreeFormat" stdset="0">
+              <string>%10.3f</string>
+             </property>
+             <property name="latheMode" stdset="0">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
         </item>
        </layout>
       </widget>
@@ -1466,6 +1780,11 @@
   </widget>
  </widget>
  <customwidgets>
+  <customwidget>
+   <class>CompositeDroGroup</class>
+   <extends>QWidget</extends>
+   <header>blue_control.widgets.composite_dro.composite_dro</header>
+  </customwidget>
   <customwidget>
    <class>FileSystemTable</class>
    <extends>QTableView</extends>
@@ -1482,9 +1801,19 @@
    <header>qtpyvcp.widgets.input_widgets.file_system</header>
   </customwidget>
   <customwidget>
-   <class>DROEntry</class>
+   <class>DROLineEdit</class>
    <extends>QLineEdit</extends>
-   <header>blue_control.widgets.dro_widgets</header>
+   <header>qtpyvcp.widgets.input_widgets.dro_line_edit</header>
+  </customwidget>
+  <customwidget>
+   <class>StatusLabel</class>
+   <extends>QLabel</extends>
+   <header>qtpyvcp.widgets.display_widgets.status_label</header>
+  </customwidget>
+  <customwidget>
+   <class>CompositeDroWidget</class>
+   <extends>QWidget</extends>
+   <header>blue_control.widgets.composite_dro.composite_dro</header>
   </customwidget>
   <customwidget>
    <class>RecentFileComboBox</class>
@@ -1492,9 +1821,19 @@
    <header>qtpyvcp.widgets.input_widgets.recent_file_combobox</header>
   </customwidget>
   <customwidget>
+   <class>VCPSettingsLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>qtpyvcp.widgets.input_widgets.setting_slider</header>
+  </customwidget>
+  <customwidget>
    <class>GcodeEditor</class>
    <extends>QFrame</extends>
    <header>qtpyvcp.widgets.input_widgets.gcode_editor</header>
+  </customwidget>
+  <customwidget>
+   <class>MDIHistory</class>
+   <extends>QListWidget</extends>
+   <header>qtpyvcp.widgets.input_widgets.mdihistory_widget</header>
   </customwidget>
   <customwidget>
    <class>VCPMainWindow</class>
@@ -1515,7 +1854,7 @@
   <customwidget>
    <class>DROLabel</class>
    <extends>QLabel</extends>
-   <header>blue_control.widgets.dro_widgets</header>
+   <header>qtpyvcp.widgets.display_widgets.dro_label</header>
   </customwidget>
   <customwidget>
    <class>ActionButton</class>
@@ -1536,8 +1875,8 @@
      <y>60</y>
     </hint>
     <hint type="destinationlabel">
-     <x>51</x>
-     <y>111</y>
+     <x>65</x>
+     <y>105</y>
     </hint>
    </hints>
   </connection>
@@ -1548,12 +1887,12 @@
    <slot>setVisible(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>381</x>
-     <y>46</y>
+     <x>138</x>
+     <y>63</y>
     </hint>
     <hint type="destinationlabel">
-     <x>428</x>
-     <y>44</y>
+     <x>448</x>
+     <y>68</y>
     </hint>
    </hints>
   </connection>
@@ -1564,12 +1903,12 @@
    <slot>ejectDevice()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>408</x>
-     <y>58</y>
+     <x>448</x>
+     <y>68</y>
     </hint>
     <hint type="destinationlabel">
-     <x>342</x>
-     <y>56</y>
+     <x>138</x>
+     <y>63</y>
     </hint>
    </hints>
   </connection>
@@ -1580,12 +1919,12 @@
    <slot>newFolder()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>57</x>
-     <y>423</y>
+     <x>72</x>
+     <y>424</y>
     </hint>
     <hint type="destinationlabel">
-     <x>36</x>
-     <y>355</y>
+     <x>50</x>
+     <y>105</y>
     </hint>
    </hints>
   </connection>
@@ -1596,12 +1935,12 @@
    <slot>newFile()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>130</x>
-     <y>412</y>
+     <x>186</x>
+     <y>424</y>
     </hint>
     <hint type="destinationlabel">
-     <x>137</x>
-     <y>376</y>
+     <x>117</x>
+     <y>105</y>
     </hint>
    </hints>
   </connection>
@@ -1612,12 +1951,12 @@
    <slot>openSelectedItem()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>488</x>
-     <y>113</y>
+     <x>554</x>
+     <y>123</y>
     </hint>
     <hint type="destinationlabel">
-     <x>433</x>
-     <y>111</y>
+     <x>117</x>
+     <y>105</y>
     </hint>
    </hints>
   </connection>
@@ -1628,12 +1967,12 @@
    <slot>viewParentDirectory()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>497</x>
-     <y>284</y>
+     <x>554</x>
+     <y>289</y>
     </hint>
     <hint type="destinationlabel">
-     <x>425</x>
-     <y>279</y>
+     <x>117</x>
+     <y>105</y>
     </hint>
    </hints>
   </connection>
@@ -1644,12 +1983,60 @@
    <slot>setText(QString)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>434</x>
-     <y>156</y>
+     <x>117</x>
+     <y>105</y>
     </hint>
     <hint type="destinationlabel">
-     <x>634</x>
-     <y>153</y>
+     <x>596</x>
+     <y>58</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_2</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>droentry_5</receiver>
+   <slot>latheAutoMode()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>513</x>
+     <y>210</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>458</x>
+     <y>219</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_3</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>droentry_5</receiver>
+   <slot>latheRadiusMode()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>517</x>
+     <y>235</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>455</x>
+     <y>233</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_4</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>droentry_5</receiver>
+   <slot>latheDiameterMode()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>513</x>
+     <y>256</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>420</x>
+     <y>245</y>
     </hint>
    </hints>
   </connection>

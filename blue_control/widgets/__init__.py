@@ -10,16 +10,12 @@ class MyPushButton_Plugin(_DesignerPlugin):
     def pluginClass(self):
         return MyPushButton
 
-from dro_widgets import DROLabel, DROEntry
-from qtdesigner.dro_editor import DroEditorExtension
-class DROLabel_Plugin(_DesignerPlugin):
+from composite_dro import CompositeDroWidget, CompositeDroGroup
+class CompositeDroWidget_Plugin(_DesignerPlugin):
     def pluginClass(self):
-        return DROLabel
-    def designerExtensions(self):
-        return [DroEditorExtension,]
+        return CompositeDroWidget
 
-class DROEntry_Plugin(_DesignerPlugin):
+class CompositeDroGroup_Plugin(_DesignerPlugin):
     def pluginClass(self):
-        return DROEntry
-    def designerExtensions(self):
-        return [DroEditorExtension,]
+        return CompositeDroGroup
+
