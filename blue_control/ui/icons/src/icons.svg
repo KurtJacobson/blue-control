@@ -28,11 +28,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.959798"
-     inkscape:cx="132.67263"
-     inkscape:cy="764.0872"
+     inkscape:zoom="2.8"
+     inkscape:cx="139.81781"
+     inkscape:cy="864.50376"
      inkscape:document-units="px"
-     inkscape:current-layer="g6798-6"
+     inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:pagecheckerboard="false"
      inkscape:window-width="1920"
@@ -61,7 +61,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
         <cc:license
            rdf:resource="" />
       </cc:Work>
@@ -74,7 +74,7 @@
      transform="translate(0,-17.60334)">
     <g
        id="power"
-       transform="matrix(7.5596704,0,0,7.5596704,59.546173,-2169.9628)"
+       transform="matrix(7.5596704,0,0,7.5596704,96.002116,-2155.6128)"
        inkscape:label="#g885">
       <g
          mask="none"
@@ -93,7 +93,7 @@
        inkscape:connector-curvature="0" />
     <g
        id="power-checked"
-       transform="matrix(3.7795275,0,0,3.7795275,59.700003,-1047.2663)"
+       transform="matrix(3.7795275,0,0,3.7795275,114,-1032.9163)"
        inkscape:label="#g840">
       <circle
          clip-path="none"
@@ -120,7 +120,7 @@
     </g>
     <g
        id="plus"
-       transform="matrix(11.338584,0,0,11.338584,-380.50005,-3174.4559)"
+       transform="matrix(11.338584,0,0,11.338584,-36.000041,-3229.9559)"
        inkscape:label="#g833">
       <path
          inkscape:connector-curvature="0"
@@ -135,7 +135,7 @@
     </g>
     <g
        id="power-disabled"
-       transform="matrix(7.5596704,0,0,7.5596704,5.3944656,-2169.9628)"
+       transform="matrix(7.5596704,0,0,7.5596704,23.997884,-2155.6128)"
        inkscape:label="#g885"
        inkscape:export-filename="/home/kurt/dev/cnc/blue-control/blue_control/ui/icons/power-disabled.png"
        inkscape:export-xdpi="96"
@@ -153,8 +153,8 @@
     <ellipse
        style="opacity:1;fill:none;fill-opacity:1;stroke:#e24e29;stroke-width:3.99714828;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path6657"
-       cx="62.237144"
-       cy="205.98523"
+       cx="47.951431"
+       cy="209.55666"
        rx="22.001427"
        ry="22.001429"
        inkscape:export-filename="/home/kurt/dev/cnc/blue-control/blue_control/ui/icons/stop.png"
@@ -165,15 +165,15 @@
        id="rect6677"
        width="43.999916"
        height="43.999916"
-       x="101.6"
-       y="183.98528"
+       x="98"
+       y="187.60333"
        ry="0"
        inkscape:export-filename="/home/kurt/dev/cnc/blue-control/blue_control/ui/icons/pause.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <path
        style="fill:none;fill-opacity:1;stroke:#75af00;stroke-width:4.000103;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 165.1,185.22138 206.6277,205.98526 165.1,226.74909 Z"
+       d="M 170,189.60334 211.5277,210.36722 170,231.13105 Z"
        id="path6679"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccc"
@@ -184,7 +184,8 @@
        id="g6798"
        inkscape:export-filename="/home/kurt/dev/cnc/blue-control/blue_control/ui/icons/homed.png"
        inkscape:export-xdpi="96.199997"
-       inkscape:export-ydpi="96.199997">
+       inkscape:export-ydpi="96.199997"
+       transform="translate(-96,-192)">
       <path
          inkscape:transform-center-y="-2.5"
          inkscape:transform-center-x="1.4285714"
@@ -205,11 +206,13 @@
         <path
            style="opacity:1;fill:none;fill-opacity:1;stroke:#c8c8c8;stroke-width:2.08694577;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
            d="m 166.91788,329.60101 a 22.956528,22.95653 0 0 1 -22.95653,22.95653 22.956528,22.95653 0 0 1 -22.95653,-22.95653 22.956528,22.95653 0 0 1 22.95653,-22.95653 22.956528,22.95653 0 0 1 22.95653,22.95653 z"
-           id="path6657-9" />
+           id="path6657-9"
+           inkscape:connector-curvature="0" />
         <path
            style="opacity:1;fill:none;fill-opacity:1;stroke:#c8c8c8;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
            d="m 157.94446,329.60101 a 13.983112,13.983113 0 0 1 -13.98311,13.98312 13.983112,13.983113 0 0 1 -13.98311,-13.98312 13.983112,13.983113 0 0 1 13.98311,-13.98311 13.983112,13.983113 0 0 1 13.98311,13.98311 z"
-           id="path6657-4" />
+           id="path6657-4"
+           inkscape:connector-curvature="0" />
         <path
            style="fill:none;stroke:#c8c8c8;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            d="m 122,329.60334 h 44"
@@ -223,7 +226,7 @@
       </g>
     </g>
     <g
-       transform="translate(72)"
+       transform="translate(-96,72)"
        id="g6798-6"
        inkscape:export-filename="/home/kurt/dev/cnc/blue-control/blue_control/ui/icons/homed.png"
        inkscape:export-xdpi="96.199997"
@@ -234,7 +237,7 @@
          sodipodi:nodetypes="ccccccc"
          inkscape:connector-curvature="0"
          id="path6774-4-0"
-         d="m 144,329.60334 h 14 l -2,6 -2,4 -4,2 -6,2 z"
+         d="m 216,65.60334 h 14 l -2,6 -2,4 -4,2 -6,2 z"
          style="fill:#e24e29;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          inkscape:export-filename="/home/kurt/dev/cnc/blue-control/blue_control/ui/icons/unhomed.png"
          inkscape:export-xdpi="96"
@@ -243,7 +246,7 @@
          sodipodi:nodetypes="ccccccc"
          inkscape:connector-curvature="0"
          id="path6774-7"
-         d="m 144,329.60334 h -14 l 2,-6 2,-4 4,-2 6,-2 z"
+         d="m 216,65.60334 h -14 l 2,-6 2,-4 4,-2 6,-2 z"
          style="fill:#e24e29;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          inkscape:export-filename="/home/kurt/dev/cnc/blue-control/blue_control/ui/icons/unhomed.png"
          inkscape:export-xdpi="96"
@@ -253,7 +256,8 @@
          id="g6772-4"
          inkscape:export-filename="/home/kurt/dev/cnc/blue-control/blue_control/ui/icons/unhomed.png"
          inkscape:export-xdpi="96"
-         inkscape:export-ydpi="96">
+         inkscape:export-ydpi="96"
+         transform="translate(72,-264)">
         <path
            inkscape:connector-curvature="0"
            style="opacity:1;fill:none;fill-opacity:1;stroke:#c8c8c8;stroke-width:2.08694577;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
@@ -276,5 +280,35 @@
            inkscape:connector-curvature="0" />
       </g>
     </g>
+    <ellipse
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#e24e29;stroke-width:3.99699998;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.39215686"
+       id="path6657-3"
+       cx="48.951431"
+       cy="281.34238"
+       rx="22.001427"
+       ry="22.001429"
+       inkscape:export-filename="/home/kurt/dev/cnc/blue-control/blue_control/ui/icons/stop.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#fecc00;stroke-width:4.0000844;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.39215687"
+       id="rect6677-6"
+       width="43.999916"
+       height="43.999916"
+       x="98.000092"
+       y="259.60342"
+       ry="0"
+       inkscape:export-filename="/home/kurt/dev/cnc/blue-control/blue_control/ui/icons/pause.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#75af00;stroke-width:4.000103;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.39215687"
+       d="M 170,262.07563 211.5277,282.83951 170,303.60334 Z"
+       id="path6679-7"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="/home/kurt/dev/cnc/blue-control/blue_control/ui/icons/start.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
   </g>
 </svg>

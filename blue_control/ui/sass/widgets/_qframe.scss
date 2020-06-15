@@ -5,6 +5,7 @@
 
 .QFrame {
   border: $border;
+  border-color: lighten($background, 6%);
   border-radius: 3px;
 }
 

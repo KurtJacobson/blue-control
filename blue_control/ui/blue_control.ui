@@ -10,18 +10,42 @@
     <height>768</height>
    </rect>
   </property>
+  <property name="font">
+   <font>
+    <family>Sans</family>
+    <pointsize>9</pointsize>
+    <weight>50</weight>
+    <italic>false</italic>
+    <bold>false</bold>
+   </font>
+  </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QVBoxLayout" name="verticalLayout_9" stretch="6,4">
+   <layout class="QVBoxLayout" name="verticalLayout_9" stretch="0,0">
+    <property name="spacing">
+     <number>5</number>
+    </property>
+    <property name="leftMargin">
+     <number>8</number>
+    </property>
+    <property name="topMargin">
+     <number>8</number>
+    </property>
+    <property name="rightMargin">
+     <number>8</number>
+    </property>
+    <property name="bottomMargin">
+     <number>8</number>
+    </property>
     <item>
      <widget class="QTabWidget" name="tabWidget">
       <property name="tabPosition">
        <enum>QTabWidget::South</enum>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>3</number>
       </property>
       <widget class="QWidget" name="tab">
        <attribute name="title">
@@ -47,6 +71,18 @@
           </property>
           <widget class="QWidget" name="layoutWidget">
            <layout class="QVBoxLayout" name="verticalLayout_7">
+            <property name="leftMargin">
+             <number>4</number>
+            </property>
+            <property name="topMargin">
+             <number>4</number>
+            </property>
+            <property name="rightMargin">
+             <number>4</number>
+            </property>
+            <property name="bottomMargin">
+             <number>4</number>
+            </property>
             <item>
              <widget class="RecentFileComboBox" name="recentfilecombobox"/>
             </item>
@@ -81,6 +117,29 @@
        <attribute name="title">
         <string>Startup</string>
        </attribute>
+       <widget class="MDIHistory" name="mdihistory">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>321</width>
+          <height>311</height>
+         </rect>
+        </property>
+        <property name="mdi_entryline_name" stdset="0">
+         <string>mdientry_2</string>
+        </property>
+       </widget>
+       <widget class="MDIEntry" name="mdientry_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>330</y>
+          <width>321</width>
+          <height>31</height>
+         </rect>
+        </property>
+       </widget>
       </widget>
       <widget class="QWidget" name="tab_2">
        <attribute name="icon">
@@ -105,6 +164,18 @@
         </property>
         <item>
          <layout class="QVBoxLayout" name="verticalLayout_8">
+          <property name="leftMargin">
+           <number>4</number>
+          </property>
+          <property name="topMargin">
+           <number>4</number>
+          </property>
+          <property name="rightMargin">
+           <number>4</number>
+          </property>
+          <property name="bottomMargin">
+           <number>4</number>
+          </property>
           <item>
            <layout class="QHBoxLayout" name="horizontalLayout_15">
             <item>
@@ -229,6 +300,174 @@
        <attribute name="title">
         <string>Settings</string>
        </attribute>
+       <widget class="QGroupBox" name="groupBox">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>177</width>
+          <height>63</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>User Input</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="VCPSettingsCheckBox" name="settings_checkbox">
+           <property name="text">
+            <string>On-Screen Keyboard </string>
+           </property>
+           <property name="settingName" stdset="0">
+            <string>virtual-keyboard.enable</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>251</width>
+          <height>201</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>DRO Display</string>
+        </property>
+        <layout class="QFormLayout" name="formLayout">
+         <property name="labelAlignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+         <property name="horizontalSpacing">
+          <number>6</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>&amp;Inch Format</string>
+           </property>
+           <property name="buddy">
+            <cstring>settings_lineedit</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="VCPSettingsLineEdit" name="settings_lineedit">
+           <property name="settingName" stdset="0">
+            <string>dro.inch-format</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>Millimeter Format</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="VCPSettingsLineEdit" name="settings_lineedit_2">
+           <property name="settingName" stdset="0">
+            <string>dro.millimeter-format</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string>Degree Format</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="VCPSettingsLineEdit" name="settings_lineedit_3">
+           <property name="settingName" stdset="0">
+            <string>dro.degree-format</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_4">
+           <property name="text">
+            <string>Display Units</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QComboBox" name="comboBox">
+           <item>
+            <property name="text">
+             <string>Program</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>mm</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>cm</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>in</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>630</x>
+          <y>40</y>
+          <width>331</width>
+          <height>239</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_12">
+         <item>
+          <widget class="CompositeDroWidget" name="compositedrowidget">
+           <property name="axisNumber" stdset="0">
+            <number>0</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="CompositeDroWidget" name="compositedrowidget_2">
+           <property name="axisNumber" stdset="0">
+            <number>1</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="CompositeDroWidget" name="compositedrowidget_3">
+           <property name="axisNumber" stdset="0">
+            <number>2</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="StatusLabel" name="statuslabel">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>90</y>
+          <width>111</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="rules" stdset="0">
+         <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axis_mask?str&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;New Rule&quot;}]</string>
+        </property>
+       </widget>
       </widget>
       <widget class="QWidget" name="tab_5">
        <attribute name="title">
@@ -237,10 +476,10 @@
        <widget class="QPushButton" name="pushButton_9">
         <property name="geometry">
          <rect>
-          <x>790</x>
-          <y>80</y>
-          <width>111</width>
-          <height>51</height>
+          <x>550</x>
+          <y>70</y>
+          <width>331</width>
+          <height>61</height>
          </rect>
         </property>
         <property name="text">
@@ -260,7 +499,7 @@
        <widget class="QPushButton" name="pushButton_11">
         <property name="geometry">
          <rect>
-          <x>790</x>
+          <x>550</x>
           <y>200</y>
           <width>131</width>
           <height>41</height>
@@ -283,7 +522,7 @@
        <widget class="QPushButton" name="pushButton_12">
         <property name="geometry">
          <rect>
-          <x>790</x>
+          <x>550</x>
           <y>250</y>
           <width>131</width>
           <height>41</height>
@@ -306,9 +545,9 @@
        <widget class="QPushButton" name="pushButton_8">
         <property name="geometry">
          <rect>
-          <x>790</x>
+          <x>550</x>
           <y>140</y>
-          <width>111</width>
+          <width>331</width>
           <height>51</height>
          </rect>
         </property>
@@ -336,12 +575,21 @@
       </property>
       <widget class="QWidget" name="page">
        <layout class="QHBoxLayout" name="horizontalLayout_18">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
         <item>
-         <widget class="QGroupBox" name="groupBox">
-          <property name="title">
-           <string>Program</string>
+         <widget class="QFrame" name="frame_3">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
           </property>
-          <layout class="QVBoxLayout" name="verticalLayout">
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_11">
            <item>
             <spacer name="verticalSpacer">
              <property name="orientation">
@@ -354,6 +602,66 @@
               </size>
              </property>
             </spacer>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_19">
+             <item>
+              <widget class="ActionButton" name="actionbutton_7">
+               <property name="text">
+                <string>Mist</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="actionName" stdset="0">
+                <string>coolant.mist.toggle</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="ActionButton" name="actionbutton_6">
+               <property name="text">
+                <string>Flood</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="actionName" stdset="0">
+                <string>coolant.flood.toggle</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_20">
+             <item>
+              <widget class="ActionButton" name="actionbutton_8">
+               <property name="text">
+                <string>Block Del</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="actionName" stdset="0">
+                <string>program.block-delete.toggle</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="ActionButton" name="actionbutton_9">
+               <property name="text">
+                <string>Opt Stop</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="actionName" stdset="0">
+                <string>program.optional-stop.toggle</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
            </item>
            <item>
             <widget class="Line" name="line_5">
@@ -383,13 +691,17 @@
                </property>
                <property name="icon">
                 <iconset>
-                 <normaloff>icons/stop.png</normaloff>icons/stop.png</iconset>
+                 <normaloff>icons/stop.png</normaloff>
+                 <disabledoff>icons/stop.disabled.png</disabledoff>icons/stop.png</iconset>
                </property>
                <property name="iconSize">
                 <size>
                  <width>36</width>
                  <height>36</height>
                 </size>
+               </property>
+               <property name="actionName" stdset="0">
+                <string>program.abort</string>
                </property>
               </widget>
              </item>
@@ -412,13 +724,17 @@
                </property>
                <property name="icon">
                 <iconset>
-                 <normaloff>icons/pause.png</normaloff>icons/pause.png</iconset>
+                 <normaloff>icons/pause.png</normaloff>
+                 <disabledoff>icons/pause.disabled.png</disabledoff>icons/pause.png</iconset>
                </property>
                <property name="iconSize">
                 <size>
                  <width>36</width>
                  <height>36</height>
                 </size>
+               </property>
+               <property name="actionName" stdset="0">
+                <string>program.pause</string>
                </property>
               </widget>
              </item>
@@ -441,13 +757,17 @@
                </property>
                <property name="icon">
                 <iconset>
-                 <normaloff>icons/start.png</normaloff>icons/start.png</iconset>
+                 <normaloff>icons/start.png</normaloff>
+                 <disabledoff>icons/start.disabled.png</disabledoff>icons/start.png</iconset>
                </property>
                <property name="iconSize">
                 <size>
                  <width>36</width>
                  <height>36</height>
                 </size>
+               </property>
+               <property name="actionName" stdset="0">
+                <string>program.run</string>
                </property>
               </widget>
              </item>
@@ -466,6 +786,18 @@
           </property>
           <layout class="QVBoxLayout" name="verticalLayout_6">
            <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>8</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>8</number>
+           </property>
+           <property name="bottomMargin">
             <number>0</number>
            </property>
            <item>
@@ -523,14 +855,12 @@
                 </property>
                 <property name="icon">
                  <iconset>
-                  <normaloff>icons/axis-x.png</normaloff>
-                  <normalon>icons/axis-y-disabled.png</normalon>
-                  <disabledoff>icons/axis-x-disabled.png</disabledoff>icons/axis-x.png</iconset>
+                  <normaloff>icons/axis-x.png</normaloff>icons/axis-x.png</iconset>
                 </property>
                 <property name="iconSize">
                  <size>
-                  <width>50</width>
-                  <height>50</height>
+                  <width>48</width>
+                  <height>48</height>
                  </size>
                 </property>
                 <property name="flat">
@@ -546,7 +876,7 @@
                 <item>
                  <layout class="QHBoxLayout" name="horizontalLayout_4">
                   <property name="spacing">
-                   <number>0</number>
+                   <number>6</number>
                   </property>
                   <item>
                    <widget class="QPushButton" name="pushButton_13">
@@ -571,8 +901,8 @@
                     </property>
                     <property name="iconSize">
                      <size>
-                      <width>24</width>
-                      <height>50</height>
+                      <width>20</width>
+                      <height>20</height>
                      </size>
                     </property>
                     <property name="flat">
@@ -581,19 +911,7 @@
                    </widget>
                   </item>
                   <item>
-                   <widget class="DROWidget" name="drowidget">
-                    <property name="sizePolicy">
-                     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                      <horstretch>0</horstretch>
-                      <verstretch>0</verstretch>
-                     </sizepolicy>
-                    </property>
-                    <property name="maximumSize">
-                     <size>
-                      <width>16777215</width>
-                      <height>30</height>
-                     </size>
-                    </property>
+                   <widget class="DROLineEdit" name="droentry">
                     <property name="font">
                      <font>
                       <family>Sans</family>
@@ -603,20 +921,14 @@
                       <bold>false</bold>
                      </font>
                     </property>
-                    <property name="styleSheet">
-                     <string notr="true">padding: 0px</string>
-                    </property>
                     <property name="alignment">
                      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
                     </property>
                     <property name="referenceType" stdset="0">
-                     <enum>DROWidget::Relative</enum>
+                     <number>1</number>
                     </property>
-                    <property name="metricTemplate" stdset="0">
-                     <string>%+10.3f</string>
-                    </property>
-                    <property name="imperialTemplate" stdset="0">
-                     <string>%+9.4f</string>
+                    <property name="axisNumber" stdset="0">
+                     <number>0</number>
                     </property>
                    </widget>
                   </item>
@@ -624,66 +936,113 @@
                 </item>
                 <item>
                  <layout class="QHBoxLayout" name="horizontalLayout_3">
+                  <property name="spacing">
+                   <number>0</number>
+                  </property>
                   <item>
-                   <widget class="DROWidget" name="drowidget_3">
+                   <spacer name="horizontalSpacer_2">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>40</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_5">
                     <property name="sizePolicy">
-                     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                     <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
                       <horstretch>0</horstretch>
                       <verstretch>0</verstretch>
                      </sizepolicy>
                     </property>
-                    <property name="maximumSize">
-                     <size>
-                      <width>16777215</width>
-                      <height>18</height>
-                     </size>
-                    </property>
-                    <property name="font">
-                     <font>
-                      <family>Sans</family>
-                      <weight>50</weight>
-                      <italic>false</italic>
-                      <bold>false</bold>
-                     </font>
+                    <property name="text">
+                     <string>ABS</string>
                     </property>
                     <property name="alignment">
-                     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-                    </property>
-                    <property name="metricTemplate" stdset="0">
-                     <string>ABS%10.3f</string>
+                     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="DROWidget" name="drowidget_2">
+                   <widget class="DROLabel" name="drolabel">
                     <property name="sizePolicy">
                      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
                       <horstretch>0</horstretch>
                       <verstretch>0</verstretch>
                      </sizepolicy>
                     </property>
-                    <property name="maximumSize">
+                    <property name="minimumSize">
                      <size>
-                      <width>16777215</width>
-                      <height>18</height>
+                      <width>0</width>
+                      <height>20</height>
                      </size>
                     </property>
-                    <property name="font">
-                     <font>
-                      <family>Sans</family>
-                      <weight>50</weight>
-                      <italic>false</italic>
-                      <bold>false</bold>
-                     </font>
+                    <property name="referenceType" stdset="0">
+                     <number>0</number>
+                    </property>
+                    <property name="axisNumber" stdset="0">
+                     <number>0</number>
+                    </property>
+                    <property name="inchFormat" stdset="0">
+                     <string>%9.4f</string>
+                    </property>
+                    <property name="millimeterFormat" stdset="0">
+                     <string>%10.3f</string>
+                    </property>
+                    <property name="metricFormat" stdset="0">
+                     <string>ABS %10.3f</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_6">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="text">
+                     <string>DTG</string>
                     </property>
                     <property name="alignment">
-                     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="DROLabel" name="drolabel_2">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>20</height>
+                     </size>
                     </property>
                     <property name="referenceType" stdset="0">
-                     <enum>DROWidget::DistanceToGo</enum>
+                     <number>2</number>
                     </property>
-                    <property name="metricTemplate" stdset="0">
-                     <string>DTG%10.3f</string>
+                    <property name="axisNumber" stdset="0">
+                     <number>0</number>
+                    </property>
+                    <property name="inchFormat" stdset="0">
+                     <string>%9.4f</string>
+                    </property>
+                    <property name="millimeterFormat" stdset="0">
+                     <string>%10.3f</string>
+                    </property>
+                    <property name="metricFormat" stdset="0">
+                     <string>DTG %10.3f</string>
                     </property>
                    </widget>
                   </item>
@@ -703,6 +1062,12 @@
            </item>
            <item>
             <widget class="QWidget" name="widget_2" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>60</height>
+              </size>
+             </property>
              <property name="maximumSize">
               <size>
                <width>16777215</width>
@@ -748,8 +1113,8 @@
                 </property>
                 <property name="iconSize">
                  <size>
-                  <width>50</width>
-                  <height>50</height>
+                  <width>48</width>
+                  <height>48</height>
                  </size>
                 </property>
                 <property name="flat">
@@ -765,7 +1130,7 @@
                 <item>
                  <layout class="QHBoxLayout" name="horizontalLayout_6">
                   <property name="spacing">
-                   <number>0</number>
+                   <number>6</number>
                   </property>
                   <item>
                    <widget class="QPushButton" name="pushButton_15">
@@ -784,8 +1149,8 @@
                     </property>
                     <property name="iconSize">
                      <size>
-                      <width>24</width>
-                      <height>50</height>
+                      <width>20</width>
+                      <height>20</height>
                      </size>
                     </property>
                     <property name="flat">
@@ -794,19 +1159,7 @@
                    </widget>
                   </item>
                   <item>
-                   <widget class="DROWidget" name="drowidget_4">
-                    <property name="sizePolicy">
-                     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                      <horstretch>0</horstretch>
-                      <verstretch>0</verstretch>
-                     </sizepolicy>
-                    </property>
-                    <property name="maximumSize">
-                     <size>
-                      <width>16777215</width>
-                      <height>30</height>
-                     </size>
-                    </property>
+                   <widget class="DROLineEdit" name="droentry_2">
                     <property name="font">
                      <font>
                       <family>Sans</family>
@@ -816,23 +1169,20 @@
                       <bold>false</bold>
                      </font>
                     </property>
-                    <property name="styleSheet">
-                     <string notr="true">padding: 0px</string>
-                    </property>
                     <property name="alignment">
                      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
                     </property>
                     <property name="referenceType" stdset="0">
-                     <enum>DROWidget::Relative</enum>
+                     <number>1</number>
                     </property>
-                    <property name="axis" stdset="0">
-                     <enum>DROWidget::Y</enum>
+                    <property name="axisNumber" stdset="0">
+                     <number>1</number>
                     </property>
-                    <property name="metricTemplate" stdset="0">
-                     <string>%+10.3f</string>
+                    <property name="inchFormat" stdset="0">
+                     <string>%+.4f</string>
                     </property>
-                    <property name="imperialTemplate" stdset="0">
-                     <string>%+9.4f</string>
+                    <property name="metricFormat" stdset="0">
+                     <string>%+.3f</string>
                     </property>
                    </widget>
                   </item>
@@ -841,71 +1191,58 @@
                 <item>
                  <layout class="QHBoxLayout" name="horizontalLayout_7">
                   <item>
-                   <widget class="DROWidget" name="drowidget_5">
+                   <widget class="DROLabel" name="drolabel_3">
                     <property name="sizePolicy">
                      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
                       <horstretch>0</horstretch>
                       <verstretch>0</verstretch>
                      </sizepolicy>
                     </property>
-                    <property name="maximumSize">
+                    <property name="minimumSize">
                      <size>
-                      <width>16777215</width>
-                      <height>18</height>
+                      <width>0</width>
+                      <height>20</height>
                      </size>
                     </property>
-                    <property name="font">
-                     <font>
-                      <family>Sans</family>
-                      <weight>50</weight>
-                      <italic>false</italic>
-                      <bold>false</bold>
-                     </font>
+                    <property name="referenceType" stdset="0">
+                     <number>0</number>
                     </property>
-                    <property name="alignment">
-                     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                    <property name="axisNumber" stdset="0">
+                     <number>1</number>
                     </property>
-                    <property name="axis" stdset="0">
-                     <enum>DROWidget::Y</enum>
+                    <property name="inchFormat" stdset="0">
+                     <string>ABS %9.4f</string>
                     </property>
-                    <property name="metricTemplate" stdset="0">
-                     <string>ABS%10.3f</string>
+                    <property name="metricFormat" stdset="0">
+                     <string>ABS %10.3f</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="DROWidget" name="drowidget_6">
+                   <widget class="DROLabel" name="drolabel_4">
                     <property name="sizePolicy">
                      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
                       <horstretch>0</horstretch>
                       <verstretch>0</verstretch>
                      </sizepolicy>
                     </property>
-                    <property name="maximumSize">
+                    <property name="minimumSize">
                      <size>
-                      <width>16777215</width>
-                      <height>18</height>
+                      <width>0</width>
+                      <height>20</height>
                      </size>
                     </property>
-                    <property name="font">
-                     <font>
-                      <family>Sans</family>
-                      <weight>50</weight>
-                      <italic>false</italic>
-                      <bold>false</bold>
-                     </font>
-                    </property>
-                    <property name="alignment">
-                     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-                    </property>
                     <property name="referenceType" stdset="0">
-                     <enum>DROWidget::DistanceToGo</enum>
+                     <number>2</number>
                     </property>
-                    <property name="axis" stdset="0">
-                     <enum>DROWidget::Y</enum>
+                    <property name="axisNumber" stdset="0">
+                     <number>1</number>
                     </property>
-                    <property name="metricTemplate" stdset="0">
-                     <string>DTG%10.3f</string>
+                    <property name="inchFormat" stdset="0">
+                     <string>DTG %9.4f</string>
+                    </property>
+                    <property name="metricFormat" stdset="0">
+                     <string>DTG %10.3f</string>
                     </property>
                    </widget>
                   </item>
@@ -925,6 +1262,12 @@
            </item>
            <item>
             <widget class="QWidget" name="widget_3" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>60</height>
+              </size>
+             </property>
              <property name="maximumSize">
               <size>
                <width>16777215</width>
@@ -970,8 +1313,8 @@
                 </property>
                 <property name="iconSize">
                  <size>
-                  <width>50</width>
-                  <height>50</height>
+                  <width>48</width>
+                  <height>48</height>
                  </size>
                 </property>
                 <property name="flat">
@@ -987,7 +1330,7 @@
                 <item>
                  <layout class="QHBoxLayout" name="horizontalLayout_9">
                   <property name="spacing">
-                   <number>0</number>
+                   <number>6</number>
                   </property>
                   <item>
                    <widget class="QPushButton" name="pushButton_17">
@@ -1006,8 +1349,8 @@
                     </property>
                     <property name="iconSize">
                      <size>
-                      <width>24</width>
-                      <height>50</height>
+                      <width>20</width>
+                      <height>20</height>
                      </size>
                     </property>
                     <property name="flat">
@@ -1016,19 +1359,7 @@
                    </widget>
                   </item>
                   <item>
-                   <widget class="DROWidget" name="drowidget_7">
-                    <property name="sizePolicy">
-                     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                      <horstretch>0</horstretch>
-                      <verstretch>0</verstretch>
-                     </sizepolicy>
-                    </property>
-                    <property name="maximumSize">
-                     <size>
-                      <width>16777215</width>
-                      <height>30</height>
-                     </size>
-                    </property>
+                   <widget class="DROLineEdit" name="droentry_3">
                     <property name="font">
                      <font>
                       <family>Sans</family>
@@ -1038,23 +1369,20 @@
                       <bold>false</bold>
                      </font>
                     </property>
-                    <property name="styleSheet">
-                     <string notr="true">padding: 0px</string>
-                    </property>
                     <property name="alignment">
                      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
                     </property>
                     <property name="referenceType" stdset="0">
-                     <enum>DROWidget::Relative</enum>
+                     <number>1</number>
                     </property>
-                    <property name="axis" stdset="0">
-                     <enum>DROWidget::Z</enum>
+                    <property name="axisNumber" stdset="0">
+                     <number>2</number>
                     </property>
-                    <property name="metricTemplate" stdset="0">
-                     <string>%+10.3f</string>
+                    <property name="inchFormat" stdset="0">
+                     <string>%+.4f</string>
                     </property>
-                    <property name="imperialTemplate" stdset="0">
-                     <string>%+9.4f</string>
+                    <property name="metricFormat" stdset="0">
+                     <string>%+.3f</string>
                     </property>
                    </widget>
                   </item>
@@ -1063,71 +1391,58 @@
                 <item>
                  <layout class="QHBoxLayout" name="horizontalLayout_10">
                   <item>
-                   <widget class="DROWidget" name="drowidget_8">
+                   <widget class="DROLabel" name="drolabel_5">
                     <property name="sizePolicy">
                      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
                       <horstretch>0</horstretch>
                       <verstretch>0</verstretch>
                      </sizepolicy>
                     </property>
-                    <property name="maximumSize">
+                    <property name="minimumSize">
                      <size>
-                      <width>16777215</width>
-                      <height>18</height>
+                      <width>0</width>
+                      <height>20</height>
                      </size>
                     </property>
-                    <property name="font">
-                     <font>
-                      <family>Sans</family>
-                      <weight>50</weight>
-                      <italic>false</italic>
-                      <bold>false</bold>
-                     </font>
+                    <property name="referenceType" stdset="0">
+                     <number>0</number>
                     </property>
-                    <property name="alignment">
-                     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                    <property name="axisNumber" stdset="0">
+                     <number>2</number>
                     </property>
-                    <property name="axis" stdset="0">
-                     <enum>DROWidget::Z</enum>
+                    <property name="inchFormat" stdset="0">
+                     <string>ABS %9.4f</string>
                     </property>
-                    <property name="metricTemplate" stdset="0">
-                     <string>ABS%10.3f</string>
+                    <property name="metricFormat" stdset="0">
+                     <string>ABS %10.3f</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="DROWidget" name="drowidget_9">
+                   <widget class="DROLabel" name="drolabel_6">
                     <property name="sizePolicy">
                      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
                       <horstretch>0</horstretch>
                       <verstretch>0</verstretch>
                      </sizepolicy>
                     </property>
-                    <property name="maximumSize">
+                    <property name="minimumSize">
                      <size>
-                      <width>16777215</width>
-                      <height>18</height>
+                      <width>0</width>
+                      <height>20</height>
                      </size>
                     </property>
-                    <property name="font">
-                     <font>
-                      <family>Sans</family>
-                      <weight>50</weight>
-                      <italic>false</italic>
-                      <bold>false</bold>
-                     </font>
-                    </property>
-                    <property name="alignment">
-                     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-                    </property>
                     <property name="referenceType" stdset="0">
-                     <enum>DROWidget::DistanceToGo</enum>
+                     <number>2</number>
                     </property>
-                    <property name="axis" stdset="0">
-                     <enum>DROWidget::Z</enum>
+                    <property name="axisNumber" stdset="0">
+                     <number>2</number>
                     </property>
-                    <property name="metricTemplate" stdset="0">
-                     <string>DTG%10.3f</string>
+                    <property name="inchFormat" stdset="0">
+                     <string>DTG %9.4f</string>
+                    </property>
+                    <property name="metricFormat" stdset="0">
+                     <string>DTG %10.3f</string>
                     </property>
                    </widget>
                   </item>
@@ -1147,6 +1462,12 @@
            </item>
            <item>
             <widget class="QWidget" name="widget_4" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>60</height>
+              </size>
+             </property>
              <property name="maximumSize">
               <size>
                <width>16777215</width>
@@ -1194,8 +1515,8 @@
                 </property>
                 <property name="iconSize">
                  <size>
-                  <width>50</width>
-                  <height>50</height>
+                  <width>48</width>
+                  <height>48</height>
                  </size>
                 </property>
                 <property name="flat">
@@ -1211,7 +1532,7 @@
                 <item>
                  <layout class="QHBoxLayout" name="horizontalLayout_12">
                   <property name="spacing">
-                   <number>0</number>
+                   <number>6</number>
                   </property>
                   <item>
                    <widget class="QPushButton" name="pushButton_19">
@@ -1230,8 +1551,8 @@
                     </property>
                     <property name="iconSize">
                      <size>
-                      <width>24</width>
-                      <height>50</height>
+                      <width>20</width>
+                      <height>20</height>
                      </size>
                     </property>
                     <property name="flat">
@@ -1240,19 +1561,7 @@
                    </widget>
                   </item>
                   <item>
-                   <widget class="DROWidget" name="drowidget_10">
-                    <property name="sizePolicy">
-                     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                      <horstretch>0</horstretch>
-                      <verstretch>0</verstretch>
-                     </sizepolicy>
-                    </property>
-                    <property name="maximumSize">
-                     <size>
-                      <width>16777215</width>
-                      <height>30</height>
-                     </size>
-                    </property>
+                   <widget class="DROLineEdit" name="droentry_4">
                     <property name="font">
                      <font>
                       <family>Sans</family>
@@ -1262,23 +1571,20 @@
                       <bold>false</bold>
                      </font>
                     </property>
-                    <property name="styleSheet">
-                     <string notr="true">padding: 0px</string>
-                    </property>
                     <property name="alignment">
                      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
                     </property>
                     <property name="referenceType" stdset="0">
-                     <enum>DROWidget::Relative</enum>
+                     <number>1</number>
                     </property>
-                    <property name="axis" stdset="0">
-                     <enum>DROWidget::A</enum>
+                    <property name="axisNumber" stdset="0">
+                     <number>3</number>
                     </property>
-                    <property name="metricTemplate" stdset="0">
-                     <string>%+10.3f</string>
+                    <property name="inchFormat" stdset="0">
+                     <string>%+.4f</string>
                     </property>
-                    <property name="imperialTemplate" stdset="0">
-                     <string>%+9.4f</string>
+                    <property name="metricFormat" stdset="0">
+                     <string>%+.3f</string>
                     </property>
                    </widget>
                   </item>
@@ -1287,71 +1593,58 @@
                 <item>
                  <layout class="QHBoxLayout" name="horizontalLayout_13">
                   <item>
-                   <widget class="DROWidget" name="drowidget_11">
+                   <widget class="DROLabel" name="drolabel_8">
                     <property name="sizePolicy">
                      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
                       <horstretch>0</horstretch>
                       <verstretch>0</verstretch>
                      </sizepolicy>
                     </property>
-                    <property name="maximumSize">
+                    <property name="minimumSize">
                      <size>
-                      <width>16777215</width>
-                      <height>18</height>
+                      <width>0</width>
+                      <height>20</height>
                      </size>
                     </property>
-                    <property name="font">
-                     <font>
-                      <family>Sans</family>
-                      <weight>50</weight>
-                      <italic>false</italic>
-                      <bold>false</bold>
-                     </font>
+                    <property name="referenceType" stdset="0">
+                     <number>0</number>
                     </property>
-                    <property name="alignment">
-                     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                    <property name="axisNumber" stdset="0">
+                     <number>3</number>
                     </property>
-                    <property name="axis" stdset="0">
-                     <enum>DROWidget::A</enum>
+                    <property name="inchFormat" stdset="0">
+                     <string>ABS %9.4f</string>
                     </property>
-                    <property name="metricTemplate" stdset="0">
-                     <string>ABS%10.3f</string>
+                    <property name="metricFormat" stdset="0">
+                     <string>ABS %10.3f</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="DROWidget" name="drowidget_12">
+                   <widget class="DROLabel" name="drolabel_7">
                     <property name="sizePolicy">
                      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
                       <horstretch>0</horstretch>
                       <verstretch>0</verstretch>
                      </sizepolicy>
                     </property>
-                    <property name="maximumSize">
+                    <property name="minimumSize">
                      <size>
-                      <width>16777215</width>
-                      <height>18</height>
+                      <width>0</width>
+                      <height>20</height>
                      </size>
                     </property>
-                    <property name="font">
-                     <font>
-                      <family>Sans</family>
-                      <weight>50</weight>
-                      <italic>false</italic>
-                      <bold>false</bold>
-                     </font>
-                    </property>
-                    <property name="alignment">
-                     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-                    </property>
                     <property name="referenceType" stdset="0">
-                     <enum>DROWidget::DistanceToGo</enum>
+                     <number>2</number>
                     </property>
-                    <property name="axis" stdset="0">
-                     <enum>DROWidget::A</enum>
+                    <property name="axisNumber" stdset="0">
+                     <number>3</number>
                     </property>
-                    <property name="metricTemplate" stdset="0">
-                     <string>DTG%10.3f</string>
+                    <property name="inchFormat" stdset="0">
+                     <string>DTG %9.4f</string>
+                    </property>
+                    <property name="metricFormat" stdset="0">
+                     <string>DTG %10.3f</string>
                     </property>
                    </widget>
                   </item>
@@ -1366,17 +1659,117 @@
          </widget>
         </item>
         <item>
-         <spacer name="horizontalSpacer">
-          <property name="orientation">
-           <enum>Qt::Horizontal</enum>
+         <widget class="QFrame" name="frame_4">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
           </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>475</width>
-            <height>20</height>
-           </size>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
           </property>
-         </spacer>
+          <layout class="QVBoxLayout" name="verticalLayout_13">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>8</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>8</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="CompositeDroGroup" name="compositedrogroup_2"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame_5">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_15">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_14">
+             <item>
+              <widget class="QCheckBox" name="checkBox_2">
+               <property name="text">
+                <string>Auto</string>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="checkBox_3">
+               <property name="text">
+                <string>Radius</string>
+               </property>
+               <property name="autoExclusive">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="checkBox_4">
+               <property name="text">
+                <string>Diameter</string>
+               </property>
+               <property name="autoExclusive">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="DROLineEdit" name="droentry_5">
+             <property name="font">
+              <font>
+               <family>Sans</family>
+               <pointsize>18</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="referenceType" stdset="0">
+              <number>1</number>
+             </property>
+             <property name="axisNumber" stdset="0">
+              <number>0</number>
+             </property>
+             <property name="inchFormat" stdset="0">
+              <string>%9.4f</string>
+             </property>
+             <property name="millimeterFormat" stdset="0">
+              <string>%10.3f</string>
+             </property>
+             <property name="degreeFormat" stdset="0">
+              <string>%10.3f</string>
+             </property>
+             <property name="latheMode" stdset="0">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
         </item>
        </layout>
       </widget>
@@ -1386,8 +1779,12 @@
    </layout>
   </widget>
  </widget>
- <layoutdefault spacing="6" margin="9"/>
  <customwidgets>
+  <customwidget>
+   <class>CompositeDroGroup</class>
+   <extends>QWidget</extends>
+   <header>blue_control.widgets.composite_dro.composite_dro</header>
+  </customwidget>
   <customwidget>
    <class>FileSystemTable</class>
    <extends>QTableView</extends>
@@ -1404,9 +1801,19 @@
    <header>qtpyvcp.widgets.input_widgets.file_system</header>
   </customwidget>
   <customwidget>
-   <class>DROWidget</class>
+   <class>DROLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>qtpyvcp.widgets.input_widgets.dro_line_edit</header>
+  </customwidget>
+  <customwidget>
+   <class>StatusLabel</class>
    <extends>QLabel</extends>
-   <header>qtpyvcp.widgets.display_widgets.dro_widget</header>
+   <header>qtpyvcp.widgets.display_widgets.status_label</header>
+  </customwidget>
+  <customwidget>
+   <class>CompositeDroWidget</class>
+   <extends>QWidget</extends>
+   <header>blue_control.widgets.composite_dro.composite_dro</header>
   </customwidget>
   <customwidget>
    <class>RecentFileComboBox</class>
@@ -1414,9 +1821,19 @@
    <header>qtpyvcp.widgets.input_widgets.recent_file_combobox</header>
   </customwidget>
   <customwidget>
+   <class>VCPSettingsLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>qtpyvcp.widgets.input_widgets.setting_slider</header>
+  </customwidget>
+  <customwidget>
    <class>GcodeEditor</class>
    <extends>QFrame</extends>
    <header>qtpyvcp.widgets.input_widgets.gcode_editor</header>
+  </customwidget>
+  <customwidget>
+   <class>MDIHistory</class>
+   <extends>QListWidget</extends>
+   <header>qtpyvcp.widgets.input_widgets.mdihistory_widget</header>
   </customwidget>
   <customwidget>
    <class>VCPMainWindow</class>
@@ -1430,11 +1847,198 @@
    <header>qtpyvcp.widgets.display_widgets.vtk_backplot.vtk_backplot</header>
   </customwidget>
   <customwidget>
+   <class>VCPSettingsCheckBox</class>
+   <extends>QCheckBox</extends>
+   <header>qtpyvcp.widgets.input_widgets.setting_slider</header>
+  </customwidget>
+  <customwidget>
+   <class>DROLabel</class>
+   <extends>QLabel</extends>
+   <header>qtpyvcp.widgets.display_widgets.dro_label</header>
+  </customwidget>
+  <customwidget>
    <class>ActionButton</class>
    <extends>QPushButton</extends>
    <header>qtpyvcp.widgets.button_widgets.action_button</header>
   </customwidget>
  </customwidgets>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>removabledevicecombobox</sender>
+   <signal>currentPathChanged(QString)</signal>
+   <receiver>filesystemtable_2</receiver>
+   <slot>setRootPath(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>49</x>
+     <y>60</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>65</x>
+     <y>105</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>removabledevicecombobox</sender>
+   <signal>currentDeviceEjectable(bool)</signal>
+   <receiver>pushButton_7</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>138</x>
+     <y>63</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>448</x>
+     <y>68</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_7</sender>
+   <signal>clicked()</signal>
+   <receiver>removabledevicecombobox</receiver>
+   <slot>ejectDevice()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>448</x>
+     <y>68</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>138</x>
+     <y>63</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_25</sender>
+   <signal>clicked()</signal>
+   <receiver>filesystemtable_2</receiver>
+   <slot>newFolder()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>72</x>
+     <y>424</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>50</x>
+     <y>105</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_24</sender>
+   <signal>clicked()</signal>
+   <receiver>filesystemtable_2</receiver>
+   <slot>newFile()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>186</x>
+     <y>424</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>117</x>
+     <y>105</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>filesystemtable_2</receiver>
+   <slot>openSelectedItem()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>554</x>
+     <y>123</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>117</x>
+     <y>105</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_22</sender>
+   <signal>clicked()</signal>
+   <receiver>filesystemtable_2</receiver>
+   <slot>viewParentDirectory()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>554</x>
+     <y>289</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>117</x>
+     <y>105</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>filesystemtable_2</sender>
+   <signal>filePreviewText(QString)</signal>
+   <receiver>gcodeeditor_3</receiver>
+   <slot>setText(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>117</x>
+     <y>105</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>596</x>
+     <y>58</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_2</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>droentry_5</receiver>
+   <slot>latheAutoMode()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>513</x>
+     <y>210</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>458</x>
+     <y>219</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_3</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>droentry_5</receiver>
+   <slot>latheRadiusMode()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>517</x>
+     <y>235</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>455</x>
+     <y>233</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_4</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>droentry_5</receiver>
+   <slot>latheDiameterMode()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>513</x>
+     <y>256</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>420</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>

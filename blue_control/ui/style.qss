@@ -41,7 +41,14 @@ QPushButton:disabled {
 
 QPushButton:pressed {
   border-color: #004065;
-  border-width: 2px 1px 1px 2px; }
+  border-width: 2px 1px 1px 2px;
+  padding: 1px 0px 0px 1px; }
+
+QPushButton:checked {
+  color: #fecc00; }
+
+QPushButton:checked:disabled {
+  color: rgba(254, 204, 0, 39%); }
 
 QPushButton:flat {
   color: #727271;
@@ -122,6 +129,9 @@ QLineEdit {
   border: 1px solid #00507e;
   border-radius: 3px;
   min-height: 25px; }
+
+QLineEdit:focus {
+  border-color: #0070b1; }
 
 /*===========================================================================*/
 /*                               QSpinBox                                    */
@@ -312,7 +322,7 @@ QTabBar {
   background: none; }
 
 QTabBar::tab {
-  border: 1px solid #00507e;
+  border: 1px solid #003763;
   border-radius: 3px; }
 
 QTabBar::tab:top,
@@ -348,7 +358,9 @@ QTabBar::tab:right {
   border-bottom-right-radius: 0px; }
 
 QTabBar::tab:selected {
-  background: #003158; }
+  color: #fecc00;
+  background: #003158;
+  border-color: #00507e; }
 
 QTabBar::tab:!selected {
   background: #002644; }
@@ -358,7 +370,7 @@ QTabBar::tab:top:!selected {
   margin-top: 1px; }
 
 QTabBar::tab:bottom:!selected {
-  border-top: 1px solid #00507e;
+  border-top: 1px solid #003763;
   margin-bottom: 1px; }
 
 QTabBar::tab:left:!selected {
@@ -389,7 +401,7 @@ QTabWidget {
   background: #003158; }
 
 QTabWidget::pane {
-  border: 1px solid #00507e;
+  border: 1px solid #003763;
   border-radius: 3px;
   padding: 1px; }
 
@@ -414,6 +426,7 @@ QTabWidget[tabPosition="3"]::pane {
 /*===========================================================================*/
 .QFrame {
   border: 1px solid #00507e;
+  border-color: #003763;
   border-radius: 3px; }
 
 QFrame[frameShape="4"] {
@@ -572,3 +585,7 @@ QSizeGrip {
 
 .ErrorDialog #ignoreException {
   border-color: rgba(255, 255, 0, 35%); }
+
+.DROEntry:disabled {
+  border-color: transparent;
+  background: transparent; }

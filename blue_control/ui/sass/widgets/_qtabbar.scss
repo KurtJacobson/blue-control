@@ -8,7 +8,7 @@ QTabBar {
 }
 
 QTabBar::tab {
-    border: $border;
+    border: 1px solid $layout-border-color;
     border-radius: 3px;
 }
 
@@ -51,7 +51,13 @@ QTabBar::tab:right { //west
 }
 
 QTabBar::tab:selected {
+    color: $yellow;
     background: lighten($background, 4%);
+    border-color: $border-color;
+    // border-top-color: $border-color;
+    // border-left-color:  qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 $layout-border-color, stop: 1 $border-color);
+    // border-right-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 $layout-border-color, stop: 1 $border-color);
+    // border-bottom-color: $border-color;
 }
 
 QTabBar::tab:!selected {
@@ -64,7 +70,7 @@ QTabBar::tab:top:!selected {
 }
 
 QTabBar::tab:bottom:!selected {
-    border-top: $border;
+    border-top: 1px solid $layout-border-color;
     margin-bottom: 1px;
 }
 
@@ -75,7 +81,7 @@ QTabBar::tab:left:!selected { //east
 
 QTabBar::tab:right:!selected { //west
     border-right: $border;
-    margin-left: 1px; 
+    margin-left: 1px;
 }
 
 QTabBar::tab:top:!first,

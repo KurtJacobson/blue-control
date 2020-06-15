@@ -9,7 +9,7 @@ QTabWidget {
 }
 
 QTabWidget::pane {
-  border: $border;
+  border: 1px solid $layout-border-color;
   border-radius: 3px;
   padding: 1px;
   // background: lighten($background, 4%);
