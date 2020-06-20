@@ -81,40 +81,38 @@
         <number>6</number>
        </property>
        <item>
-        <layout class="QVBoxLayout" name="verticalLayout">
-         <item>
-          <widget class="QPushButton" name="homed_indicator">
-           <property name="enabled">
-            <bool>true</bool>
-           </property>
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">max-width: 20px; max-height: 20px; min-width: 20px; min-height:20px;</string>
-           </property>
-           <property name="text">
-            <string/>
-           </property>
-           <property name="icon">
-            <iconset>
-             <normaloff>icons/unhomed.png</normaloff>icons/unhomed.png</iconset>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>16</width>
-             <height>16</height>
-            </size>
-           </property>
-           <property name="flat">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-        </layout>
+        <layout class="QVBoxLayout" name="verticalLayout"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="homed_indicator">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>24</width>
+           <height>24</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>24</width>
+           <height>24</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>icons/unhomed.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
        </item>
        <item>
         <widget class="DROLineEdit" name="dro_entry">

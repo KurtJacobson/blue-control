@@ -2,7 +2,7 @@
 import os
 from qtpy import uic
 from qtpy.QtCore import Slot, Property
-from qtpy.QtGui import QIcon
+from qtpy.QtGui import QIcon, QPixmap
 from qtpy.QtWidgets import QWidget, QVBoxLayout, QFrame
 
 from qtpyvcp.plugins import getPlugin
@@ -51,14 +51,17 @@ class CompositeDroWidget(QWidget):
 
     def updateHomedStatus(self, homed):
         if homed[self._anum] == 1:
-            self.homed_indicator.setIcon(self.getIcon('homed.png'))
+            self.homed_indicator.setPixmap(self.getPixmap('homed.png'))
         else:
-            self.homed_indicator.setIcon(self.getIcon('unhomed.png'))
+            self.homed_indicator.setPixmap(self.getPixmap('unhomed.png'))
 
     def getIcon(self, name):
         # icon_name = 'axis-%(axis_letter).png' % {'axis_letter': self._anum}
 
         return QIcon(os.path.join(ICON_PATH, name))
+
+    def getPixmap(self, name):
+        return QPixmap(os.path.join(ICON_PATH, name))
 
 
 class CompositeDroGroup(QWidget):
