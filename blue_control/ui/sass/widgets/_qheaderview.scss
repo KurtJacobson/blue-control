@@ -8,6 +8,7 @@ QHeaderView {
   border-style: solid;
   border-color: transparent;
   border-bottom: $border;
+  border-bottom-color: $layout-border-color;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }

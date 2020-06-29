@@ -459,6 +459,7 @@ QAbstractItemView {
   background-color: #003158;
   alternate-background-color: #002c4e;
   border: 1px solid #00507e;
+  border-color: #003763;
   border-radius: 3px; }
 
 QAbstractItemView::item {
@@ -519,6 +520,7 @@ QHeaderView {
   border-style: solid;
   border-color: transparent;
   border-bottom: 1px solid #00507e;
+  border-bottom-color: #003763;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px; }
 
