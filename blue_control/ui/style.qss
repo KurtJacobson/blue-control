@@ -139,7 +139,7 @@ QLineEdit:focus {
 QSpinBox,
 QDoubleSpinBox {
   min-height: 25px;
-  min-width: 150px;
+  min-width: 100px;
   border: 1px solid #00507e;
   border-radius: 3px;
   background-color: #003158; }
@@ -148,16 +148,22 @@ QSpinBox:focus,
 QDoubleSpinBox:focus {
   border-color: #1196ff; }
 
-QSpinBox::up-button,
-QDoubleSpinBox::up-button {
+QSpinBox[buttonSymbols="0"]::up-button,
+QSpinBox[buttonSymbols="1"]::up-button,
+QDoubleSpinBox[buttonSymbols="0"]::up-button,
+QDoubleSpinBox[buttonSymbols="1"]::up-button {
   subcontrol-origin: margin;
   subcontrol-position: center right;
   width: 30px;
   height: 15px;
   border-left: 1px solid #00436a; }
 
-QSpinBox::up-arrow,
-QDoubleSpinBox::up-arrow {
+QSpinBox[buttonSymbols="0"]::up-arrow,
+QDoubleSpinBox[buttonSymbols="0"]::up-arrow {
+  image: url(icons/arrow-up.png); }
+
+QSpinBox[buttonSymbols="1"]::up-arrow,
+QDoubleSpinBox[buttonSymbols="1"]::up-arrow {
   image: url(icons/plus.png); }
 
 QSpinBox::up-arrow:off,
@@ -166,16 +172,22 @@ QDoubleSpinBox::up-arrow:off,
 QDoubleSpinBox::up-arrow:disabled {
   /* off state when value is max */ }
 
-QSpinBox::down-button,
-QDoubleSpinBox::down-button {
+QSpinBox[buttonSymbols="0"]::down-button,
+QSpinBox[buttonSymbols="1"]::down-button,
+QDoubleSpinBox[buttonSymbols="0"]::down-button,
+QDoubleSpinBox[buttonSymbols="1"]::down-button {
   subcontrol-origin: margin;
   subcontrol-position: center left;
   width: 30px;
   height: 15px;
   border-right: 1px solid #00436a; }
 
-QSpinBox::down-arrow,
-QDoubleSpinBox::down-arrow {
+QSpinBox[buttonSymbols="0"]::down-arrow,
+QDoubleSpinBox[buttonSymbols="0"]::down-arrow {
+  image: url(icons/arrow-down.png); }
+
+QSpinBox[buttonSymbols="1"]::down-arrow,
+QDoubleSpinBox[buttonSymbols="1"]::down-arrow {
   image: url(icons/minus.png); }
 
 QSpinBox::down-arrow:off,
