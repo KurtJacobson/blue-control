@@ -533,7 +533,7 @@ QHeaderView::up-arrow {
 /*                                 QLabel                                    */
 /*===========================================================================*/
 QLabel {
-  padding: 4; }
+  padding: 2; }
 
 QLabel[frameShape='6'] {
   background: #00203a;
