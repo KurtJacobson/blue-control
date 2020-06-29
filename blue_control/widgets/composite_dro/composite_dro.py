@@ -45,6 +45,8 @@ class CompositeDroWidget(QWidget):
         self.abs_dro.axisNumber = self._anum
         self.dtg_dro.axisNumber = self._anum
 
+        self.load_inidcator.pinBaseName = 'combidro.{}.load-indicator'.format(self._aletter)
+
         icon_name = 'axis-%s.png' % self._aletter
         icon = QIcon(os.path.join(ICON_PATH, icon_name))
         self.axis_actions_button.setIcon(icon)
