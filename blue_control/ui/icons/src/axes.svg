@@ -17,7 +17,50 @@
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
    sodipodi:docname="axes.svg">
   <defs
-     id="defs4858" />
+     id="defs4858">
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker1504"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path1502"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker1488"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path1486"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lstart"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path1216"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+  </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -25,17 +68,17 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.7361706"
-     inkscape:cx="167.63005"
-     inkscape:cy="657.85567"
+     inkscape:zoom="0.74839286"
+     inkscape:cx="396.85039"
+     inkscape:cy="296.46208"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="true"
-     inkscape:window-width="1920"
-     inkscape:window-height="1055"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1"
+     inkscape:window-width="1116"
+     inkscape:window-height="879"
+     inkscape:window-x="664"
+     inkscape:window-y="63"
+     inkscape:window-maximized="0"
      gridtolerance="10">
     <inkscape:grid
        type="axonomgrid"
@@ -54,7 +97,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -442,7 +485,7 @@
              height="141.73228"
              width="285.56458"
              id="rect6133" /></flowRegion><flowPara
-           id="flowPara6135"></flowPara></flowRoot>    </g>
+           id="flowPara6135" /></flowRoot>    </g>
     <g
        id="g6231"
        transform="translate(-104.62283,70.105681)">
@@ -839,6 +882,236 @@
            d="m 135.20937,198.78819 c -1.4719,0 -2.77123,0.90379 -3.67213,2.2663 -0.90094,1.36251 -1.43864,3.20151 -1.43864,5.22593 0,2.02444 0.5377,3.86661 1.43864,5.22913 0.9009,1.36251 2.20023,2.2639 3.67213,2.2639 1.47191,0 2.77124,-0.90139 3.67215,-2.2639 0.12922,-0.19547 0.24928,-0.40303 0.36306,-0.61736 l -0.87166,-0.31747 c -0.0819,0.14794 -0.16635,0.29161 -0.2559,0.42703 -0.78245,1.18337 -1.81082,1.85606 -2.90765,1.85606 -1.09682,0 -2.12199,-0.67269 -2.90444,-1.85606 -0.78246,-1.18336 -1.28749,-2.86088 -1.28749,-4.72133 0,-1.86045 0.50503,-3.53717 1.28749,-4.72053 0.78245,-1.18336 1.80762,-1.85286 2.90444,-1.85286 1.09683,0 2.1252,0.6695 2.90765,1.85286 0.22349,0.33799 0.41898,0.72151 0.59018,1.13396 l -0.74691,0.27189 1.74811,2.18313 0.29508,-1.40344 0.0152,0.005 c -0.003,-0.0109 -0.006,-0.0211 -0.009,-0.0319 l 0.34146,-1.62416 -0.77809,0.28309 c -0.19633,-0.47724 -0.4265,-0.92237 -0.69173,-1.32348 -0.90091,-1.36251 -2.20024,-2.2663 -3.67214,-2.2663 z"
            style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#fecc00;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.91779602;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
       </g>
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       id="path6900-3"
+       d="m 120.01277,168.07994 c -1.43565,0 -2.70297,0.6031 -3.58168,1.5123 -0.87875,0.9092 -1.4032,2.13637 -1.4032,3.48726 0,1.35091 0.52445,2.58019 1.4032,3.4894 0.87871,0.9092 2.14603,1.5107 3.58168,1.5107 1.43566,0 2.70298,-0.6015 3.5817,-1.5107 0.12604,-0.13044 0.24314,-0.26894 0.35412,-0.41196 l -0.85019,-0.21185 c -0.0799,0.0987 -0.16226,0.19459 -0.2496,0.28496 -0.76318,0.78966 -1.76621,1.23854 -2.83603,1.23854 -1.0698,0 -2.06972,-0.44888 -2.8329,-1.23854 -0.76319,-0.78966 -1.25577,-1.90907 -1.25577,-3.15055 0,-1.24147 0.49258,-2.36035 1.25577,-3.15001 0.76318,-0.78965 1.7631,-1.23641 2.8329,-1.23641 1.06982,0 2.07285,0.44676 2.83603,1.23641 0.21799,0.22555 0.40866,0.48147 0.57565,0.7567 l -0.72852,0.18143 1.70505,1.4568 0.28781,-0.93651 0.0148,0.003 c -0.003,-0.007 -0.006,-0.0141 -0.009,-0.0213 l 0.33305,-1.0838 -0.75892,0.18891 c -0.19149,-0.31846 -0.41599,-0.6155 -0.6747,-0.88316 -0.87872,-0.9092 -2.14603,-1.5123 -3.58168,-1.5123 z"
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#fecc00;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.74044174;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+    <circle
+       style="fill:none;fill-opacity:0.39215686;stroke:#c8c8c8;stroke-width:1.14397657;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path1010"
+       cx="129.17046"
+       cy="154.80128"
+       r="5.7780118" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot5529-1-1-6"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.66666794px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#0080c0;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,17.481626,82.121167)"
+       inkscape:export-filename="/home/kurt/dev/cnc/blue-control/blue_control/ui/icons/axes.png"
+       inkscape:export-xdpi="140.84929"
+       inkscape:export-ydpi="140.84929"><flowRegion
+         id="flowRegion5531-2-9-7"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.66666794px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#0080c0;fill-opacity:1"><rect
+           id="rect5533-2-4-5"
+           width="46.728748"
+           height="47.244095"
+           x="186.91499"
+           y="498.89764"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.66666794px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#0080c0;fill-opacity:1" /></flowRegion><flowPara
+         id="flowPara5535-1-2-3"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.66666794px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#0080c0;fill-opacity:1">CNCCNCC</flowPara><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.66666794px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#0080c0;fill-opacity:1"
+         id="flowPara5573-0-5" /></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot5529-1-1-62"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.66666794px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#0080c0;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,18.709528,82.301137)"
+       inkscape:export-filename="/home/kurt/dev/cnc/blue-control/blue_control/ui/icons/axes.png"
+       inkscape:export-xdpi="140.84929"
+       inkscape:export-ydpi="140.84929"><flowRegion
+         id="flowRegion5531-2-9-9"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.66666794px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#0080c0;fill-opacity:1"><rect
+           id="rect5533-2-4-1"
+           width="46.728748"
+           height="47.244095"
+           x="186.91499"
+           y="498.89764"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.66666794px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#0080c0;fill-opacity:1" /></flowRegion><flowPara
+         id="flowPara5535-1-2-2"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.66666794px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#0080c0;fill-opacity:1">CNC</flowPara><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.66666794px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#0080c0;fill-opacity:1"
+         id="flowPara5573-0-7" /></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot5529-1-1-0"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.66666794px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#0080c0;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,28.014352,86.321457)"
+       inkscape:export-filename="/home/kurt/dev/cnc/blue-control/blue_control/ui/icons/axes.png"
+       inkscape:export-xdpi="140.84929"
+       inkscape:export-ydpi="140.84929"><flowRegion
+         id="flowRegion5531-2-9-93"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.66666794px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#0080c0;fill-opacity:1"><rect
+           id="rect5533-2-4-6"
+           width="46.728748"
+           height="47.244095"
+           x="186.91499"
+           y="498.89764"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.66666794px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#0080c0;fill-opacity:1" /></flowRegion><flowPara
+         id="flowPara5535-1-2-0"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.66666794px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#0080c0;fill-opacity:1">YNC</flowPara><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.66666794px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#0080c0;fill-opacity:1"
+         id="flowPara5573-0-6" /></flowRoot>    <g
+       id="g1214"
+       inkscape:export-filename="/home/kurt/dev/cnc/blue-control/blue_control/ui/icons/icon.png"
+       inkscape:export-xdpi="109.76019"
+       inkscape:export-ydpi="109.76019">
+      <rect
+         ry="1.2836384"
+         y="211.57001"
+         x="64.499374"
+         height="12.429996"
+         width="12.429996"
+         id="rect1012"
+         style="fill:#002644;fill-opacity:1;stroke:#00507e;stroke-width:0.5291667;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <flowRoot
+         inkscape:export-ydpi="140.84929"
+         inkscape:export-xdpi="140.84929"
+         inkscape:export-filename="/home/kurt/dev/cnc/blue-control/blue_control/ui/icons/axes.png"
+         transform="matrix(0.15733498,0,0,0.15733498,37.841406,134.22039)"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.66666794px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#0080c0;fill-opacity:1;stroke:none"
+         id="flowRoot5529-1-1-2"
+         xml:space="preserve"><flowRegion
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.66666794px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#0080c0;fill-opacity:1"
+           id="flowRegion5531-2-9-6"><rect
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.66666794px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#0080c0;fill-opacity:1"
+             y="498.89764"
+             x="186.91499"
+             height="32.800793"
+             width="81.033997"
+             id="rect5533-2-4-18" /></flowRegion><flowPara
+           id="flowPara5573-0-9"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.66666794px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#0080c0;fill-opacity:1">CNC</flowPara></flowRoot>      <g
+         transform="matrix(0.22115108,0,0,0.22115108,47.71123,191.80806)"
+         id="g5614-2">
+        <g
+           id="g5440-0"
+           style="fill:#0080c0;fill-opacity:1;stroke:#0080c0;stroke-width:1.58749998;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           transform="translate(0.15191158,-2.5)"
+           inkscape:export-filename="/home/kurt/dev/cnc/blue-control/blue_control/ui/icons/axes.png"
+           inkscape:export-xdpi="140.84929"
+           inkscape:export-ydpi="140.84929">
+          <path
+             inkscape:connector-curvature="0"
+             id="path5416-2"
+             d="m 82.272411,134.5 v -20"
+             style="fill:#0080c0;fill-opacity:1;stroke:#0080c0;stroke-width:1.58749998;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             sodipodi:nodetypes="cc" />
+          <path
+             sodipodi:nodetypes="cccc"
+             inkscape:connector-curvature="0"
+             id="path5420-3"
+             d="m 82.272411,112.5 -2.747477,4 h 5.494954 z"
+             style="fill:#0080c0;fill-opacity:1;stroke:none;stroke-width:1.58749998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        </g>
+        <g
+           id="g5432-7"
+           transform="translate(0.15191158,-2.5)"
+           style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+           inkscape:export-filename="/home/kurt/dev/cnc/blue-control/blue_control/ui/icons/axes.png"
+           inkscape:export-xdpi="140.84929"
+           inkscape:export-ydpi="140.84929">
+          <g
+             id="g5444-5"
+             style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none">
+            <path
+               style="fill:#76af00;fill-opacity:1;stroke:#76af00;stroke-width:1.58749998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               d="m 82.272411,134.5 c 6.624457,-2.50692 12.692662,-4.57699 20.606079,-7.5"
+               id="path5426-9"
+               inkscape:connector-curvature="0"
+               sodipodi:nodetypes="cc" />
+            <path
+               style="fill:#76af00;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               d="m 105.62597,126 -8.242433,1 5.494953,2 z"
+               id="path5489-2"
+               inkscape:connector-curvature="0" />
+          </g>
+        </g>
+        <g
+           id="g5436-2"
+           style="fill:#e24e29;fill-opacity:1;stroke:#e24e29;stroke-width:1.58749998;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           transform="translate(0.15191158,-2.5)"
+           inkscape:export-filename="/home/kurt/dev/cnc/blue-control/blue_control/ui/icons/axes.png"
+           inkscape:export-xdpi="140.84929"
+           inkscape:export-ydpi="140.84929">
+          <path
+             sodipodi:nodetypes="cccc"
+             inkscape:connector-curvature="0"
+             id="path5424-8"
+             d="m 105.62597,143 -2.74748,-3 -5.494953,2 z"
+             style="fill:#e24e29;fill-opacity:1;stroke:none;stroke-width:1.58749998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+          <path
+             inkscape:connector-curvature="0"
+             id="path5428-9"
+             d="M 82.272411,134.5 102.87849,142"
+             style="fill:#e24e29;fill-opacity:1;stroke:#e24e29;stroke-width:1.58749998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             sodipodi:nodetypes="cc" />
+        </g>
+        <circle
+           style="fill:#fecc00;fill-opacity:1;stroke:none;stroke-width:0.62042242;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path5448-7"
+           cx="82.424324"
+           cy="132"
+           r="2.5"
+           inkscape:export-filename="/home/kurt/dev/cnc/blue-control/blue_control/ui/icons/axes.png"
+           inkscape:export-xdpi="140.84929"
+           inkscape:export-ydpi="140.84929" />
+        <flowRoot
+           xml:space="preserve"
+           id="flowRoot5529-3"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.66666794px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#0080c0;fill-opacity:1;stroke:none"
+           transform="matrix(0.26458333,0,0,0.26458333,30.852306,-29.009673)"
+           inkscape:export-filename="/home/kurt/dev/cnc/blue-control/blue_control/ui/icons/axes.png"
+           inkscape:export-xdpi="140.84929"
+           inkscape:export-ydpi="140.84929"><flowRegion
+             id="flowRegion5531-61"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.66666794px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#0080c0;fill-opacity:1"><rect
+               id="rect5533-29"
+               width="46.728748"
+               height="47.244095"
+               x="186.91499"
+               y="498.89764"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.66666794px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#0080c0;fill-opacity:1" /></flowRegion><flowPara
+             id="flowPara5535-3"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.66666794px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#0080c0;fill-opacity:1">Z</flowPara></flowRoot>        <flowRoot
+           xml:space="preserve"
+           id="flowRoot5529-1-19"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.66666794px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#76af00;fill-opacity:1;stroke:none"
+           transform="matrix(0.26458333,0,0,0.26458333,55.707816,-12.784225)"
+           inkscape:export-filename="/home/kurt/dev/cnc/blue-control/blue_control/ui/icons/axes.png"
+           inkscape:export-xdpi="140.84929"
+           inkscape:export-ydpi="140.84929"><flowRegion
+             id="flowRegion5531-2-4"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.66666794px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#76af00;fill-opacity:1"><rect
+               id="rect5533-2-7"
+               width="46.728748"
+               height="47.244095"
+               x="186.91499"
+               y="498.89764"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.66666794px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#76af00;fill-opacity:1" /></flowRegion><flowPara
+             id="flowPara5535-1-8"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.66666794px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#76af00;fill-opacity:1">Y</flowPara><flowPara
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.66666794px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#76af00;fill-opacity:1"
+             id="flowPara5573-4" /></flowRoot>        <flowRoot
+           xml:space="preserve"
+           id="flowRoot5529-7-5"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.66666794px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#e24e29;fill-opacity:1;stroke:none"
+           transform="matrix(0.26458333,0,0,0.26458333,56.498745,5.4866074)"
+           inkscape:export-filename="/home/kurt/dev/cnc/blue-control/blue_control/ui/icons/axes.png"
+           inkscape:export-xdpi="140.84929"
+           inkscape:export-ydpi="140.84929"><flowRegion
+             id="flowRegion5531-6-0"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.66666794px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#e24e29;fill-opacity:1"><rect
+               id="rect5533-0-3"
+               width="46.728748"
+               height="47.244095"
+               x="186.91499"
+               y="498.89764"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.66666794px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#e24e29;fill-opacity:1" /></flowRegion><flowPara
+             id="flowPara5535-10-6"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.66666794px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#e24e29;fill-opacity:1">X</flowPara><flowPara
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.66666794px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#e24e29;fill-opacity:1"
+             id="flowPara5587-1" /></flowRoot>      </g>
     </g>
   </g>
 </svg>

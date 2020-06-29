@@ -20,7 +20,17 @@
    sodipodi:docname="icons.svg"
    inkscape:version="0.92.3 (2405546, 2018-03-11)">
   <defs
-     id="defs2" />
+     id="defs2">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath936">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 48,353.60334 24,329.75226 v 47.85108 z"
+         id="path938"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+  </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -28,9 +38,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.8"
-     inkscape:cx="139.81781"
-     inkscape:cy="864.50376"
+     inkscape:zoom="1.979899"
+     inkscape:cx="99.953044"
+     inkscape:cy="814.87507"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -41,7 +51,13 @@
      inkscape:window-y="0"
      inkscape:window-maximized="1"
      units="in"
-     scale-x="1">
+     scale-x="1"
+     objecttolerance="2"
+     gridtolerance="2"
+     inkscape:snap-perpendicular="true"
+     inkscape:snap-tangential="true"
+     showguides="true"
+     inkscape:guide-bbox="true">
     <inkscape:grid
        type="xygrid"
        id="grid815"
@@ -52,6 +68,11 @@
        visible="true"
        snapvisiblegridlinesonly="true"
        dotted="false" />
+    <sodipodi:guide
+       position="48,720"
+       orientation="0.70710678,0.70710678"
+       id="guide991"
+       inkscape:locked="false" />
   </sodipodi:namedview>
   <metadata
      id="metadata5">
@@ -61,7 +82,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
         <cc:license
            rdf:resource="" />
       </cc:Work>
@@ -308,6 +329,34 @@
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccc"
        inkscape:export-filename="/home/kurt/dev/cnc/blue-control/blue_control/ui/icons/start.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#e24e29;stroke-width:3.99714828;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path6657-36"
+       cx="119.93366"
+       cy="354.25214"
+       rx="22.001427"
+       ry="22.001429"
+       inkscape:export-filename="/home/kurt/dev/cnc/blue-control/blue_control/ui/icons/stop.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#75af00;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3.99714828;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.39215687;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       clip-path="none"
+       d="M 47.707031 312.16211 C 41.206972 312.16211 35.307086 314.76728 30.980469 318.98047 L 28 316 L 25.611328 327.69922 L 36.853516 324.85352 L 33.792969 321.79297 C 37.390201 318.30848 42.287317 316.1582 47.707031 316.1582 C 58.777974 316.1582 67.710938 325.09117 67.710938 336.16211 C 67.710938 347.23306 58.777974 356.16406 47.707031 356.16406 C 42.204956 356.16406 37.234415 353.95513 33.623047 350.37695 L 30.8125 353.1875 C 35.153289 357.49528 41.124621 360.16211 47.707031 360.16211 C 60.938193 360.16211 71.707031 349.39328 71.707031 336.16211 C 71.707031 322.93095 60.938193 312.16211 47.707031 312.16211 z "
+       transform="translate(0,17.60334)"
+       id="path6657-36-7"
+       inkscape:export-filename="/home/kurt/dev/cnc/blue-control/blue_control/ui/icons/spindle-ccw.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       inkscape:connector-curvature="0"
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#75af00;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3.99714828;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.39215687;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       clip-path="none"
+       d="m 192.55679,329.60334 c 6.50006,0 12.39994,2.60517 16.72656,6.81836 l 2.98047,-2.98047 2.38867,11.69922 -11.24219,-2.8457 3.06055,-3.06055 c -3.59723,-3.48449 -8.49435,-5.63477 -13.91406,-5.63477 -11.07095,0 -20.00391,8.93297 -20.00391,20.00391 0,11.07095 8.93296,20.00195 20.00391,20.00195 5.50207,0 10.47261,-2.20893 14.08398,-5.78711 l 2.81055,2.81055 c -4.34079,4.30778 -10.31212,6.97461 -16.89453,6.97461 -13.23117,0 -24,-10.76883 -24,-24 0,-13.23116 10.76883,-24 24,-24 z"
+       id="path6657-36-7-2"
+       inkscape:export-filename="/home/kurt/dev/cnc/blue-control/blue_control/ui/icons/spindle-cw.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
   </g>
