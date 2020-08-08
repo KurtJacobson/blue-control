@@ -237,7 +237,7 @@ QScrollBar::right-arrow:horizontal {
 QScrollBar:vertical {
   border: 1px solid transparent;
   border-radius: 3px;
-  background: transparent;
+  background: #002644;
   width: 30px;
   margin: 0px 0px 0px 0px; }
 
@@ -603,3 +603,8 @@ QSizeGrip {
 .DROEntry:disabled {
   border-color: transparent;
   background: transparent; }
+
+.GcodeTextEdit {
+  font: 12pt "Roboto Mono";
+  border: 1px solid #00507e;
+  border-radius: 2px; }
