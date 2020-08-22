@@ -50,7 +50,7 @@ QScrollBar::right-arrow:horizontal {
 QScrollBar:vertical {
     border: 1px solid transparent;
     border-radius: 3px;
-    background: transparent;
+    background: lighten($background, 0%);
     width: 30px;
     margin: 0px 0px 0px 0px;
 }
