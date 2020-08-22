@@ -608,3 +608,7 @@ QSizeGrip {
   font: 11pt "Roboto Mono";
   border: 1px solid #00507e;
   border-radius: 2px; }
+
+.VirtualInput > QPushButton {
+  min-width: 50px;
+  min-height: 50px; }

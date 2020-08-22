@@ -56,3 +56,8 @@
   border: $border;
   border-radius: 2px;
 }
+
+.VirtualInput > QPushButton {
+  min-width: 50px;
+  min-height: 50px;
+}
