@@ -605,6 +605,6 @@ QSizeGrip {
   background: transparent; }
 
 .GcodeTextEdit {
-  font: 12pt "Roboto Mono";
+  font: 11pt "Roboto Mono";
   border: 1px solid #00507e;
   border-radius: 2px; }
