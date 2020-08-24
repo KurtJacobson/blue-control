@@ -52,7 +52,7 @@
        <enum>QTabWidget::South</enum>
       </property>
       <property name="currentIndex">
-       <number>4</number>
+       <number>3</number>
       </property>
       <widget class="QWidget" name="tab">
        <attribute name="title">
@@ -316,15 +316,43 @@
          </widget>
         </item>
         <item>
-         <widget class="GcodeEditor" name="gcodeeditor_3">
-          <property name="horizontalScrollBarPolicy">
-           <enum>Qt::ScrollBarAlwaysOff</enum>
+         <widget class="GcodeTextEdit" name="gcode_edit_2">
+          <property name="plainText">
+           <string/>
           </property>
-          <property name="backgroundcolor" stdset="0">
-           <string>#003158</string>
+          <property name="centerOnScroll">
+           <bool>false</bool>
           </property>
-          <property name="marginbackgroundcolor" stdset="0">
-           <string>#002644</string>
+          <property name="placeholderText">
+           <string>No file loaded</string>
+          </property>
+          <property name="currentLineBackground" stdset="0">
+           <color>
+            <red>0</red>
+            <green>49</green>
+            <blue>88</blue>
+           </color>
+          </property>
+          <property name="marginBackground" stdset="0">
+           <color>
+            <red>0</red>
+            <green>38</green>
+            <blue>68</blue>
+           </color>
+          </property>
+          <property name="marginCurrentLineBackground" stdset="0">
+           <color>
+            <red>0</red>
+            <green>49</green>
+            <blue>88</blue>
+           </color>
+          </property>
+          <property name="marginCurrentLineColor" stdset="0">
+           <color>
+            <red>203</red>
+            <green>203</green>
+            <blue>203</blue>
+           </color>
           </property>
          </widget>
         </item>
@@ -1427,6 +1455,54 @@
           <property name="frameShadow">
            <enum>QFrame::Raised</enum>
           </property>
+          <widget class="VCPSettingsCheckBox" name="settings_checkbox_2">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>20</y>
+             <width>131</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Machine Bounds</string>
+           </property>
+           <property name="settingName" stdset="0">
+            <string>backplot.show-machine-bounds</string>
+           </property>
+          </widget>
+          <widget class="VCPSettingsPushButton" name="settingspushbutton">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>70</y>
+             <width>121</width>
+             <height>27</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Machine Bounds</string>
+           </property>
+           <property name="settingName" stdset="0">
+            <string>backplot.show-machine-bounds</string>
+           </property>
+          </widget>
+          <widget class="VCPSettingsPushButton" name="settings_pushbutton">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>110</y>
+             <width>121</width>
+             <height>27</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Program Bounds</string>
+           </property>
+           <property name="settingName" stdset="0">
+            <string>backplot.show-program-bounds</string>
+           </property>
+          </widget>
          </widget>
         </item>
        </layout>
@@ -1510,12 +1586,6 @@
    <container>1</container>
   </customwidget>
   <customwidget>
-   <class>GcodeEditor</class>
-   <extends>QFrame</extends>
-   <header>qtpyvcp.widgets.input_widgets.gcode_editor</header>
-   <container>1</container>
-  </customwidget>
-  <customwidget>
    <class>MDIHistory</class>
    <extends>QListWidget</extends>
    <header>qtpyvcp.widgets.input_widgets.mdihistory_widget</header>
@@ -1540,6 +1610,11 @@
    <class>ActionButton</class>
    <extends>QPushButton</extends>
    <header>qtpyvcp.widgets.button_widgets.action_button</header>
+  </customwidget>
+  <customwidget>
+   <class>VCPSettingsPushButton</class>
+   <extends>QPushButton</extends>
+   <header>qtpyvcp.widgets.input_widgets.setting_slider</header>
   </customwidget>
  </customwidgets>
  <resources/>
@@ -1659,16 +1734,16 @@
   <connection>
    <sender>filesystemtable_2</sender>
    <signal>filePreviewText(QString)</signal>
-   <receiver>gcodeeditor_3</receiver>
-   <slot>setText(QString)</slot>
+   <receiver>gcode_edit_2</receiver>
+   <slot>setPlainText(QString)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>117</x>
-     <y>105</y>
+     <x>426</x>
+     <y>144</y>
     </hint>
     <hint type="destinationlabel">
-     <x>596</x>
-     <y>58</y>
+     <x>622</x>
+     <y>142</y>
     </hint>
    </hints>
   </connection>
