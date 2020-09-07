@@ -1315,7 +1315,8 @@
                </property>
                <property name="icon">
                 <iconset>
-                 <normaloff>icons/spindle-ccw.png</normaloff>icons/spindle-ccw.png</iconset>
+                 <normaloff>icons/spindle-ccw.png</normaloff>
+                 <disabledoff>icons/spindle-ccw.disabled.png</disabledoff>icons/spindle-ccw.png</iconset>
                </property>
                <property name="iconSize">
                 <size>
@@ -1347,7 +1348,8 @@
                </property>
                <property name="icon">
                 <iconset>
-                 <normaloff>icons/stop.png</normaloff>icons/stop.png</iconset>
+                 <normaloff>icons/stop.png</normaloff>
+                 <disabledoff>icons/stop.disabled.png</disabledoff>icons/stop.png</iconset>
                </property>
                <property name="iconSize">
                 <size>
@@ -1379,7 +1381,8 @@
                </property>
                <property name="icon">
                 <iconset>
-                 <normaloff>icons/spindle-cw.png</normaloff>icons/spindle-cw.png</iconset>
+                 <normaloff>icons/spindle-cw.png</normaloff>
+                 <disabledoff>icons/spindle-cw.disabled.png</disabledoff>icons/spindle-cw.png</iconset>
                </property>
                <property name="iconSize">
                 <size>
